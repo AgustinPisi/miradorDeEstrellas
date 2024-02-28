@@ -33,3 +33,10 @@ body {
     transition: background-position 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
