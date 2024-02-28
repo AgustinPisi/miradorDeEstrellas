@@ -33,20 +33,3 @@ body {
     transition: background-position 0.3s ease;
 }
 
-@media (max-width: 992px) { /* Ajusta este valor según el punto de ruptura deseado */
-    .navbar .container-fluid {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navbar-toggler {
-      order: 1;
-    }
-    .navbar-brand {
-      order: 0;
-    }
-    .navbar-collapse {
-      order: 2;
-      width: 100%;
-    }
-  }
