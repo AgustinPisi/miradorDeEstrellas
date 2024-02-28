@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgb(78, 0, 0) !important;
+}
+
+.titulo-de-bienvenida {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: aliceblue;
+    font-weight: bolder;
+    background-color: rgb(168, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-image: url('https://i.postimg.cc/ryYjQPDr/backgrooundd-Mesa-de-trabajo-1.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: repeat;
+}
+
+.nav-text-hover {
+    font-weight: 600;
+    background: linear-gradient(to left, rgb(78, 0, 0) 50%, rgb(168, 0, 0) 50%) no-repeat 100% center / 200%;
+}
+
+.nav-text-hover:hover {
+    background-position: 0% center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-position 0.3s ease;
+}
+
