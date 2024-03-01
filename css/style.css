@@ -9,8 +9,8 @@
     color: aliceblue;
     font-weight: bolder;
     background-color: #a80000;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     margin-bottom: 0px;
 }
 
@@ -61,3 +61,10 @@ body {
   .titulo-de-bienvenida span {
     animation: fadeInText 1s ease-in-out forwards;
   }
+
+  .mb-3 {
+    font-display: flex;
+    justify-content: center;
+  }
+  
+  
