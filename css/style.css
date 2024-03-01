@@ -50,7 +50,7 @@ body {
  @keyframes fadeInText {
     from {
       opacity: 0;
-      transform: translateX(-50px); /* Ajusta según necesites */
+      transform: translateX(-100px); 
     }
     to {
       opacity: 1;
