@@ -67,4 +67,30 @@ body {
     justify-content: center;
   }
   
+  .card:hover {
+    transform: scale(1.06) !important;
+    transition: transform 0.3s ease !important;
+  }
+  
+  .card {
+    background-color: rgb(78, 0, 0);
+    color: white;;
+  }
+
+  .card-title {
+    font-weight: 700;
+  }
+
+  .btn-tienda {
+    background-color: rgb(78, 0, 0);
+    border-color: white;
+    font-weight: 600;
+  }
+
+  .btn-tienda:hover {
+    background-color: #a80000   ;
+    border-color:  white;
+    color: white ;
+    font-weight: 600;
+  }
   
