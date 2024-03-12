@@ -122,9 +122,30 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: "Roboto Slab", serif;
     font-size: 50px;
     font-weight: bolder;
     color: rgb(78, 0, 0);
   }
 
+  ::-webkit-scrollbar {
+    width: 15px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(78, 0, 0); /* Fondo gris casi negro para la pista */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333; /* Color específico para el control deslizante */
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(78, 0, 0); /* Color más claro para el control deslizante al pasar el mouse */
+}
+
+.carousel-marcas {
+  margin-bottom: 100px;
+}
   
