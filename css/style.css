@@ -166,6 +166,7 @@ body {
 .imagen-sobrenosotros img {
   max-width: 40%; 
   height: auto; 
+  border-radius: 10px;
   filter: grayscale(100%); /* Establece la imagen en blanco y negro */
   transition: filter 0.5s ease; /* Agrega una transición suave al cambiar el filtro */
   margin-bottom: 30px;
@@ -219,3 +220,4 @@ h4 {
     font-size: 35px; 
   }
 }
+
