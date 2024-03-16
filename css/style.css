@@ -201,6 +201,9 @@ h4 {
     transform: scale(1); /* En dispositivos móviles, no reducir la imagen */
   }
 }
+.direccion {
+  text-align: center;
+}
 
 
 .identidad-titulo {
@@ -219,5 +222,28 @@ h4 {
   .identidad-titulo {
     font-size: 35px; 
   }
+}
+
+.botones-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.boton-whatsapp img, .boton-tienda img {
+  width: 100px; 
+  height: auto;
+  transition: transform 0.3s ease; 
+  margin-bottom: 50px;
+}
+
+.boton-whatsapp img:hover, .boton-tienda img:hover {
+  transform: scale(1.1);
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
