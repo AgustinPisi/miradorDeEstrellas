@@ -14,6 +14,8 @@
     margin-bottom: 0px;
 }
 
+
+
 body {
   margin: 0;
   background-image: url('../recursos/fondo.png'); 
@@ -229,18 +231,48 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 100px;
+  align-items: center; /* Asegura alineación vertical de todos los elementos */
 }
 
-.boton-whatsapp img, .boton-tienda img {
-  width: 100px; 
+.boton-mail, .boton-whatsapp, .boton-tienda {
+  display: flex;
+  flex-direction: column; /* Organiza el contenido en columnas */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.boton-whatsapp img, .boton-tienda img, .boton-ubicacion img, .boton-mail img, .boton-ig img {
+  width: 100px;
   height: auto;
-  transition: transform 0.3s ease; 
-  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px; /* Espacio reducido para mejor alineación con el texto */
 }
 
-.boton-whatsapp img:hover, .boton-tienda img:hover {
+.boton-whatsapp img:hover, .boton-tienda img:hover, .boton-ubicacion img:hover, .boton-mail img:hover, .boton-ig img:hover {
   transform: scale(1.1);
 }
+
+.boton-mail span, .boton-whatsapp span, .boton-tienda span {
+  display: block;
+  text-align: center;
+  font-size: 1rem; /* Mantenemos tu tamaño de fuente */
+  color: #4e0000; /* Color de texto según tu diseño */
+  margin-top: 5px; /* Espacio ajustado para una visualización más clara */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .botones-contacto {
+    flex-direction: column; /* Cambia la dirección a column para apilar los botones */
+    gap: 20px; /* Reduce el espacio entre los botones */
+  }
+
+  .boton-mail, .boton-whatsapp, .boton-tienda {
+    width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
+  }
+}
+
+
 
 .mapa {
   display: flex;
@@ -249,4 +281,14 @@ h4 {
   
 }
 
+.adopcion-cards {
+  margin-top: 101px;
+}
 
+.spanBoton {
+  font-weight: bold;
+}
+
+.spanRedes {
+  margin-bottom: 100px;
+}
