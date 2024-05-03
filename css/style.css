@@ -283,6 +283,7 @@ h4 {
 
 .adopcion-cards {
   margin-top: 101px;
+  margin-bottom: 60px;
 }
 
 .spanBoton {
@@ -292,3 +293,40 @@ h4 {
 .spanRedes {
   margin-bottom: 100px;
 }
+
+.footer {
+  display: flex;
+  align-items: center; /* Asegura que el texto y los íconos estén alineados verticalmente */
+  justify-content: space-between; /* Espacia el texto y los íconos */
+  padding: 10px;
+}
+
+.footer-text {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; /* Remueve cualquier margen predeterminado que pueda desalinear el texto */
+  display: flex;
+  align-items: center; /* Asegura el alineamiento vertical del texto */
+  justify-content: center; /* Centra el texto horizontalmente dentro de su espacio */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Alinea los íconos en el centro verticalmente */
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; /* Espacio entre los íconos */
+}
+
+@media (max-width: 600px) {
+  .social-icon {
+      width: 25px;
+      height: 25px;
+  }
+}
+
+
+
