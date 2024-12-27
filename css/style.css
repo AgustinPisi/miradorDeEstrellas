@@ -105,7 +105,32 @@ body {
     border-color: rgb(28, 76, 124);
   }
   
+  .botoncito {
+    margin: 20px;
+  }
+  .botoncito2 {
+    margin-bottom: 100px;
+  }
   
+  .mb-4 {
+    margin-bottom: 70px;
+    color: rgb(28, 76, 124) ;
+  }
+
+  .textito2 {
+    margin-bottom: 150px; 
+    color: rgb(28, 76, 124);
+    
+  }
+
+  .cartitaDestino {
+    margin-bottom: 200px; 
+    
+    
+  }
+  
+  
+
   /* Media Query para pantallas grandes */
   @media (min-width: 768px) {
     h2 {
@@ -183,23 +208,7 @@ body {
     margin-bottom: 10px;
     font-size: 20px;
   }
-.social-icons {
-  display: flex;
-  align-items: center; /* Alinea los íconos en el centro verticalmente */
-}
 
-.social-icon {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px; /* Espacio entre los íconos */
-}
-
-@media (max-width: 600px) {
-  .social-icon {
-      width: 25px;
-      height: 25px;
-  }
-}
 
 
 
