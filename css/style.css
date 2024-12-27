@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgb(78, 0, 0) !important;
+    background-color: rgb(39, 94, 156) !important;
 }
 
 .titulo-de-bienvenida {
@@ -8,9 +8,9 @@
     font-size: large;
     color: aliceblue;
     font-weight: bolder;
-    background-color: #a80000;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    background-color: rgb(28, 76, 124);
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 0px;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .nav-text-hover {
     font-weight: 600;
-    background: linear-gradient(to left, rgb(78, 0, 0) 50%, rgb(168, 0, 0) 50%) no-repeat 100% center / 200%;
+    background: linear-gradient(to left, rgb(39, 94, 156) 50%, rgb(28, 76, 124) 50%) no-repeat 100% center / 200%;
 }
 
 .nav-text-hover:hover {
@@ -37,11 +37,11 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(168, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(39, 94, 156)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   .navbar-toggler {
-    border-color: rgb(168, 0, 0);
+    border-color: rgb(39, 94, 156);
   }
 
  
@@ -63,253 +63,126 @@ body {
   
   .titulo-de-bienvenida span {
     animation: fadeInText 1s ease-in-out forwards;
+  } 
+
+  
+
+  h2 {
+    font-family: 'Roboto Condensed', sans-serif; /* Fuente Roboto */
+    text-align: center; /* Centrado */
+    font-size: 2rem; /* Tamaño base */
+    margin-top: 70px ;
+    margin-bottom: 60px;
+    line-height: 1.2; /* Espaciado entre líneas */
+    color: rgb(28, 76, 124); /* Color del texto (opcional) */
   }
 
-  .cards-categorias {
-    margin-bottom: 50px;
-  }
-
-  .mb-3 {
-    font-display: flex;
-    justify-content: center;
+  #carouselExampleInterval {
+    transition: opacity 0.3s ease-in-out; /* Transición suave al cambiar opacidad */
   }
   
-  .card:hover {
-    transform: scale(1.06) !important;
-    transition: transform 0.3s ease !important;
+  
+
+  .text-justify {
+    text-align: justify;
+  }
+
+  .custom-title {
+    color:rgb(39, 94, 156); /* Color del título */
   }
   
-  .card {
-    background-color: rgb(78, 0, 0);
-    color: white;;
-  }
-
-  .card-title {
-    font-weight: 700;
-  }
-
-  .btn-tienda {
-    background-color: rgb(78, 0, 0);
-    border-color: white;
-    font-weight: 600;
-  }
-
-  .btn-tienda:hover {
-    background-color: #a80000   ;
-    border-color:  white;
-    color: white ;
-    font-weight: 600;
+  .custom-text {
+    color: rgb(28, 76, 124); /* Color del texto */
   }
   
-  .btn-tienda:active  {
-      background-color: #a80000 !important;
-      border-color:  black !important;
-      color: white ;
-      font-weight: 600;
+  .custom-btn {
+    background-color: rgb(39, 94, 156); /* Color del fondo del botón */
+    border-color: rgb(39, 94, 156); /* Color del borde del botón */
   }
-
-  .footer {
-    padding-top: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color:rgb(78, 0, 0) ;
-    margin-top: auto;
+  
+  .custom-btn:hover {
+    background-color: rgb(28, 76, 124); /* Color del botón al pasar el mouse */
+    border-color: rgb(28, 76, 124);
   }
-
-  .tipo-de-mascota {
-    margin-top: 100px;
-    margin-bottom: 120px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Roboto Slab", serif;
-    font-size: 50px;
-    font-weight: bolder;
-    color: rgb(78, 0, 0);
-  }
-
-  @media (max-width: 600px) {
-    .tipo-de-mascota {
-      font-size: 35px; 
+  
+  
+  /* Media Query para pantallas grandes */
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 3rem; /* Aumenta tamaño en pantallas más grandes */
     }
   }
-
-  ::-webkit-scrollbar {
-    width: 15px; /* Ancho de la barra de desplazamiento */
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(78, 0, 0); /* Fondo gris casi negro para la pista */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #333; /* Color específico para el control deslizante */
-    
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(78, 0, 0); /* Color más claro para el control deslizante al pasar el mouse */
-}
-
-.carousel-marcas {
-  margin-bottom: 100px;
-}
   
-.imagen-sobrenosotros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%; 
-  height: auto; 
-}
-
-.imagen-sobrenosotros img {
-  max-width: 40%; 
-  height: auto; 
-  border-radius: 10px;
-  filter: grayscale(100%); /* Establece la imagen en blanco y negro */
-  transition: filter 0.5s ease; /* Agrega una transición suave al cambiar el filtro */
-  margin-bottom: 30px;
-}
-
-.imagen-sobrenosotros img:hover {
-  filter: grayscale(0); /* Cambia la imagen a color cuando el mouse pasa sobre ella */
-}
-
-@media (max-width: 600px) {
-  .imagen-sobrenosotros img {
-    max-width: 90%; /* Tamaño más grande para dispositivos móviles */
-    transform: scale(1); /* En dispositivos móviles, no reducir la imagen */
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #286bcf;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-}
-
-h4 {
-  max-width: 40%;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  font-family: "Roboto Slab", serif;
-  color: rgb(78, 0, 0);
-}
-
-@media (max-width: 600px) {
-  h4 {
-    max-width: 90%; /* Tamaño más grande para dispositivos móviles */
-    transform: scale(1); /* En dispositivos móviles, no reducir la imagen */
-  }
-}
-.direccion {
-  text-align: center;
-}
-
-
-
-.identidad-titulo {
-  margin-top: 60px;
-  margin-bottom: 45px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-size: 50px;
-  font-weight: bolder;
-  color: rgb(78, 0, 0);
-}
-
-@media (max-width: 600px) {
-  .identidad-titulo {
-    font-size: 35px; 
-  }
-}
-
-.botones-contacto {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  align-items: center; /* Asegura alineación vertical de todos los elementos */
-}
-
-.boton-mail, .boton-whatsapp, .boton-tienda {
-  display: flex;
-  flex-direction: column; /* Organiza el contenido en columnas */
-  align-items: center; /* Centra el contenido horizontalmente */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
-
-.boton-whatsapp img, .boton-tienda img, .boton-ubicacion img, .boton-mail img, .boton-ig img {
-  width: 100px;
-  height: auto;
-  transition: transform 0.3s ease;
-  margin-bottom: 10px; /* Espacio reducido para mejor alineación con el texto */
-}
-
-.boton-whatsapp img:hover, .boton-tienda img:hover, .boton-ubicacion img:hover, .boton-mail img:hover, .boton-ig img:hover {
-  transform: scale(1.1);
-}
-
-.boton-mail span, .boton-whatsapp span, .boton-tienda span {
-  display: block;
-  text-align: center;
-  font-size: 1rem; /* Mantenemos tu tamaño de fuente */
-  color: #4e0000; /* Color de texto según tu diseño */
-  margin-top: 5px; /* Espacio ajustado para una visualización más clara */
-}
-
-/* Media Query para pantallas pequeñas */
-@media (max-width: 600px) {
-  .botones-contacto {
-    flex-direction: column; /* Cambia la dirección a column para apilar los botones */
-    gap: 20px; /* Reduce el espacio entre los botones */
-  }
-
-  .boton-mail, .boton-whatsapp, .boton-tienda {
-    width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
-  }
-}
-
-
-
-.mapa {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
   
-}
-
-.adopcion-cards {
-  margin-top: 101px;
-  margin-bottom: 60px;
-}
-
-.spanBoton {
-  font-weight: bold;
-}
-
-.spanRedes {
-  margin-bottom: 100px;
-}
-
-.footer {
-  display: flex;
-  align-items: center; /* Asegura que el texto y los íconos estén alineados verticalmente */
-  justify-content: space-between; /* Espacia el texto y los íconos */
-  padding: 10px;
-}
-
-.footer-text {
-  flex-grow: 1;
-  text-align: center;
-  margin: 0; /* Remueve cualquier margen predeterminado que pueda desalinear el texto */
-  display: flex;
-  align-items: center; /* Asegura el alineamiento vertical del texto */
-  justify-content: center; /* Centra el texto horizontalmente dentro de su espacio */
-}
-
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-elem {
+    list-style: none;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+    list-style: none;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .menu-icon:hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 .social-icons {
   display: flex;
   align-items: center; /* Alinea los íconos en el centro verticalmente */
@@ -327,6 +200,7 @@ h4 {
       height: 25px;
   }
 }
+
 
 
 
