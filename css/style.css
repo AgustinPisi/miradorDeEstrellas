@@ -2,6 +2,20 @@
     background-color: rgb(39, 94, 156) !important;
 }
 
+#logo {
+  max-width: 400px; /* tamaño base */
+  height: auto;
+}
+
+/* Estilo específico para móviles */
+@media (max-width: 768px) {
+  #logo {
+    content: url('../recursos/logoblanco.png') !important;  /* Cambia la imagen */
+    max-width: 120px !important;  /* Asegura el tamaño del logo */
+    height: auto !important;     /* Evita que se deforme */
+  }
+}
+
 .titulo-de-bienvenida {
     display: flex;
     justify-content: center;
@@ -12,6 +26,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -60,7 +75,48 @@ body {
       transform: translateX(0);
     }
   }
+
+
+
+
+  /* Estilizar la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Cambiar el color del "thumb" (la parte deslizante) */
+::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Azul Bootstrap */
+  border-radius: 5px;
+}
+
+/* Cambiar el fondo de la barra */
+::-webkit-scrollbar-track {
+  background: rgb(28, 76, 124); /* Color de fondo */
   
+}
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    margin-top: 30px;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Evita que desborde en móviles */
+    width: auto; /* Mantiene la proporción original */
+    height: auto; /* Asegura que la imagen no se deforme */
+    max-height: 700px; /* Opcional: Limita la altura sin deformar */
+    border-radius: 10px; /* Opcional: Bordes redondeados */
+    object-fit: contain; /* Mantiene la imagen sin recortar ni deformar */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animación suave */
+  }
+  .image-container img:hover {
+    transform: scale(1.05); /* Aumenta un 10% el tamaño al pasar el mouse */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra más pronunciada */
+  }
+
+
   .titulo-de-bienvenida span {
     animation: fadeInText 1s ease-in-out forwards;
   } 
@@ -118,7 +174,7 @@ body {
   }
 
   .textito2 {
-    margin-bottom: 150px; 
+    margin-bottom: 200px; 
     color: rgb(28, 76, 124);
     
   }
@@ -127,6 +183,48 @@ body {
     margin-bottom: 200px; 
     
     
+  }
+
+  .whatsapp-container {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    
+}
+
+.whatsapp-icon {
+  width: 60px; /* Reduce el tamaño */
+  height: auto; /* Mantiene la proporción */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  transition: transform 0.2s ease-in-out; /* Efecto al pasar el mouse */
+
+  /* Centrado y margen */
+  display: block; 
+  margin: 0 auto 60px; /* Centra horizontalmente y agrega margen abajo */
+}
+
+
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+  .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Eleva la card 5px */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra más pronunciada */
+  }
+
+  .aboutText {
+    max-width: 650px; /* Ajusta el ancho según tu preferencia */
+    margin: 0 auto;
+    text-align: justify; /* Justifica el texto */
+    font-weight: 600; /* Hace que el texto sea negrita */
   }
   
   
@@ -141,7 +239,7 @@ body {
   .footer {
     position: relative;
     width: 100%;
-    background: #286bcf;
+    background: rgb(39, 94, 156);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -209,6 +307,7 @@ body {
     font-size: 20px;
   }
 
+  
 
 
 
