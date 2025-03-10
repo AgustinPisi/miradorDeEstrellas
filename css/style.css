@@ -32,11 +32,14 @@
 
 
 body {
-  margin: 0;
-  background-image: url('../recursos/fondo.png'); 
+  margin: 0; 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (max-width: 780px) {
+body {padding-right: 0px !important;}
 }
 
 .nav-text-hover {
@@ -309,8 +312,7 @@ body {
 
   @media (max-width: 768px) {
     .swal2-popup {
-        width: 90% !important; 
-        max-width: 350px !important;
+        padding-right: 0px !important; 
     }
 }
   
