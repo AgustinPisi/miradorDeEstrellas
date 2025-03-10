@@ -309,7 +309,7 @@ body {
 
   @media (max-width: 768px) {
     .swal2-popup {
-        width: 90% !important; /* Reduce el ancho del modal */
+        width: 90% !important; 
         max-width: 350px !important;
     }
 }
