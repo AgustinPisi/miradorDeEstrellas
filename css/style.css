@@ -43,24 +43,33 @@ body {padding-right: 0px !important;}
 }
 
 .nav-text-hover {
-    font-weight: 600;
-    background: linear-gradient(to left, rgb(39, 94, 156) 50%, rgb(28, 76, 124) 50%) no-repeat 100% center / 200%;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(28, 76, 124) 50%, rgb(39, 94, 156) 50%);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease-in-out;
 }
 
 .nav-text-hover:hover {
-    background-position: 0% center;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-position 0.3s ease;
+  background-position: left bottom;
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(39, 94, 156)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+    }
 
   .navbar-toggler {
-    border-color: rgb(39, 94, 156);
+    border-color: rgba(39, 94, 156, 0.5);
   }
+
+  .navbar-toggler:focus, 
+.navbar-toggler:active {
+    border-color: rgba(39, 94, 156, 0.5); /* Mantiene el color azul */
+    box-shadow: 0 0 5px rgba(39, 94, 156, 0.5); /* Ajusta la sombra azul */
+}
 
  
   .animate__fadeInLeft {
@@ -124,6 +133,14 @@ body {padding-right: 0px !important;}
     animation: fadeInText 1s ease-in-out forwards;
   } 
 
+  .container-experiencias {
+    max-width: 900px; /* Limita el ancho del contenedor para que las cards se acerquen */
+    margin: auto; /* Centra el contenedor */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Reduce el espacio entre las tarjetas */
+}
   
 
   h2 {
@@ -316,7 +333,47 @@ body {padding-right: 0px !important;}
     }
 }
   
+/* Ajustes de tamaño de las tarjetas */
+.card {
+  max-width: 250px; /* Para que las tarjetas no sean muy grandes */
+  margin: auto; /* Centrar las tarjetas */
+}
+@media (max-width: 576px) { /* En móviles */
+  .card {
+      max-width: 95%; /* Asegura que la tarjeta no quede pegada a un lado */
+      margin: auto; /* Refuerza la alineación al centro */
+  }
+}
 
 
+/* Para asegurar que en móvil se muestre solo 1 tarjeta por fila */
+@media (max-width: 768px) {
+  .col-12 {
+      width: 100%;
+  }
+}
 
+
+.card {
+  
+    max-width: 800px; /* Ajusta el ancho máximo de las tarjetas */
+    margin: auto; /* Centra las tarjetas */
+}
+
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.card-body {
+  text-align: left;
+}
+
+.textoFiltrito {
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+
+}
 

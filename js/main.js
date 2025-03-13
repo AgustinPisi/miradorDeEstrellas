@@ -90,5 +90,19 @@ window.onload = function () {
     });
 };
 
+function toggleInfo(id) { 
+    let info = document.getElementById("info" + id);
+    let btn = document.getElementById("toggleBtn" + id);
+    let whatsappBtn = document.getElementById("whatsappBtn" + id);
 
+    info.addEventListener("hidden.bs.collapse", function () {
+        btn.textContent = "Ver más";
+        whatsappBtn.style.display = "none";
+    });
+
+    info.addEventListener("shown.bs.collapse", function () {
+        btn.textContent = "Ver menos";
+        whatsappBtn.style.display = "block";
+    });
+}
 

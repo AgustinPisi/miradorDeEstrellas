@@ -1,236 +1,642 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="destinos, tours por Argentina, viajes, actividades">
-    <meta name="description" content="Descubre los mejores destinos de Argentina con Mirador de Estrellas - Wine Tours.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description"
+        content="Descubre los mejores destinos de Argentina con Mirador de Estrellas - Wine Tours.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="../recursos/iso.png" type="image/x-icon">
     <title>Destinos - Mirador de Estrellas</title>
 </head>
+
 <body>
 
-<!-- Barrita de navegacion -->
-<header id="header" class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar sticky-top bg-body-tertiary p-0 shadow">
-      <div class="container-fluid container-fluid shadow">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../recursos/MIRADOR DE ESTRELLAS-08.png" alt="logo" style="max-width: 400px; height: auto;">
-        </a>
+    <!-- Barrita de navegacion -->
+    <header id="header" class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar sticky-top bg-body-tertiary p-0 shadow">
+            <div class="container-fluid container-fluid shadow">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="../index.html">
+                    <img id="logo" src="../recursos/MIRADOR DE ESTRELLAS-08.png" alt="logo"
+                        style="max-width: 400px; height: auto;">
+                </a>
 
-        <!-- Botón de colapso -->
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Botón de colapso -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Resto de barra -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto d-flex">
-            <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="../index.html">INICIO</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link active text-light nav-text-hover" href="#">EXPERIENCIAS</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="about.html">SOBRE NOSOTROS</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light nav-text-hover" href="legal.html">LEGAL</a>
-            </li>
-          </ul>
+                <!-- Resto de barra -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto d-flex">
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light nav-text-hover" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link active text-light nav-text-hover" href="#">EXPERIENCIAS</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light nav-text-hover" href="about.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light nav-text-hover" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light nav-text-hover" href="legal.html">LEGAL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-destinos" class="contenido-con-sticky" data-aos="fade-up">
+        <div class="text-center my-3">
+            <h5 class="card-title custom-title textoFiltrito">Filtrar por:</h5>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="all">Mostrar Todo</button>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="excursiones">Excursiones</button>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="wine-tours">Wine Tours</button>
         </div>
-      </div>
-    </nav>
-</header>
 
-<!-- Contenido principal -->
-<main id="main-destinos" class="contenido-con-sticky">
+        <div class="container mt-5">
+            <section id="excursiones-section">
+                <h2 class="text-center my-5">Excursiones</h2>
+                <div class="row justify-content-center">
+                    <div class="row justify-content-center mx-auto px-0">
+                        <div class="row">
+                            <!-- Tarjeta 1: Alta Montaña y Puente del Inca -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-01.jpg"
+                                        class="card-img-top object-fit-cover"
+                                        alt="Imagen Alta Montaña y Puente del Inca"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Alta Montaña y Puente del Inca</h5>
+                                        <p class="card-text custom-text">Excursión de día completo por la cordillera de
+                                            Los Andes.</p>
 
-    <h2 class="text-center my-5" data-aos="fade-up">Excursiones</h2>
+                                        <button id="toggleBtn1" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info1" onclick="toggleInfo(1)">
+                                            Ver más
+                                        </button>
 
-    
-    <!-- Tarjetas de destinos -->
-<div class="container mt-5">
-  <div class="row justify-content-center">
-      <!-- Tarjeta 1 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/excur.jpg" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 1" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 1</h5>
-                  <p class="card-text">Texto de la tarjeta 1.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
+                                        <div id="info1" class="collapse mt-2">
+                                            <p>Excursión de día completo a la cordillera de Los Andes. Se pasará por los
+                                                valles de Potrerillos y Uspallata, el centro de ski Los Penitentes, el
+                                                Puente del Inca y el mirador del Cerro Aconcagua, hasta llegar al límite
+                                                con Chile, en Las Cuevas (3.200 mts).</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Almuerzo</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Lunes a domingos, de 07:30 hs a 20:00
+                                                hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
+                                                protector solar y lentes de sol.</p>
+                                            <a id="whatsappBtn1"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Alta%20Montaña%20y%20Puente%20del%20Inca"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-      <!-- Tarjeta 2 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/nacho_rodriguez_photo_of_rafting_xtrem_splash_--ar_43_--stylize_b4dfa69d-0f37-4ab7-84b9-902bc035dcf2.png" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 2" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 2</h5>
-                  <p class="card-text">Texto de la tarjeta 2.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
+                            <!-- Tarjeta 2: Tour de Bodegas -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-02.jpg"
+                                        class="card-img-top object-fit-cover" alt="Imagen Tour de Bodegas"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Tour de Bodegas</h5>
+                                        <p class="card-text custom-text">Recorrido de medio día visitando dos bodegas y
+                                            una fábrica de aceite de oliva.</p>
 
-      <!-- Tarjeta 3 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/nacho_rodriguez_photo_of_rafting_xtrem_splash_--ar_43_--stylize_b4dfa69d-0f37-4ab7-84b9-902bc035dcf2.png" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 3" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 3</h5>
-                  <p class="card-text">Texto de la tarjeta 3.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+                                        <button id="toggleBtn2" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info2" onclick="toggleInfo(2)">
+                                            Ver más
+                                        </button>
 
-<h2 class="text-center my-5" data-aos="fade-up">Wine Tours</h2>
+                                        <div id="info2" class="collapse mt-2">
+                                            <p>Tour de vinos de medio día. Se realizan visitas a dos Bodegas con
+                                                degustaciones de vinos, buscando encontrar un contraste entre las
+                                                mismas. Posteriormente, se visitará una fábrica de aceite de oliva,
+                                                donde podrás disfrutar de sus productos.</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Entradas y degustaciones</li>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Almuerzo</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Lunes a sábados, de 14:30 hs a 19:00
+                                                hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
+                                                lentes de sol.</p>
+                                            <a id="whatsappBtn2"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Tour%20de%20Bodegas"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
- <!-- Tarjetas de destinos -->
- <div class="container mt-5">
-  <div class="row justify-content-center">
-      <!-- Tarjeta 1 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/excur.jpg" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 1" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 1</h5>
-                  <p class="card-text">Texto de la tarjeta 1.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
+                            <!-- Tarjeta 3: Cañón del Atuel y San Rafael -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-03.jpg"
+                                        class="card-img-top object-fit-cover" alt="Imagen Cañón del Atuel y San Rafael"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Cañón del Atuel y San Rafael</h5>
+                                        <p class="card-text custom-text">Excursión de día completo por el Cañón del
+                                            Atuel y San Rafael.</p>
 
-      <!-- Tarjeta 2 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/nacho_rodriguez_photo_of_rafting_xtrem_splash_--ar_43_--stylize_b4dfa69d-0f37-4ab7-84b9-902bc035dcf2.png" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 2" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 2</h5>
-                  <p class="card-text">Texto de la tarjeta 2.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
+                                        <button id="toggleBtn3" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info3" onclick="toggleInfo(3)">
+                                            Ver más
+                                        </button>
 
-      <!-- Tarjeta 3 -->
-      <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-              <img src="../recursos/nacho_rodriguez_photo_of_rafting_xtrem_splash_--ar_43_--stylize_b4dfa69d-0f37-4ab7-84b9-902bc035dcf2.png" 
-                   class="card-img-top object-fit-cover" 
-                   alt="Imagen 3" 
-                   style="height: 200px;">
-              <div class="card-body text-center">
-                  <h5 class="card-title">Card 3</h5>
-                  <p class="card-text">Texto de la tarjeta 3.</p>
-                  <a href="#" class="btn btn-primary mt-auto custom-btn w-100">Ver más</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+                                        <div id="info3" class="collapse mt-2">
+                                            <p>Descubre el sur de Mendoza, allí serás sorprendido por la belleza del
+                                                Cañón del Atuel, con una explosión de colores y exóticas formaciones
+                                                rocosas junto a espejos de agua. Luego de un recorrido por la ciudad de
+                                                San Rafael se regresa al centro de Mendoza..</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Almuerzo</li>
+                                                <li>Actividades de rafting y catamarán</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Jueves y domingos, de 07:00 hs a 21:00
+                                                hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Traje de baño, muda de ropa, calzado
+                                                impermeable, protector solar y lentes de sol.</p>
+                                            <a id="whatsappBtn3"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Cañón%20del%20Atuel%20y%20San%20Rafael"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 4: City Tour -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-04.jpg"
+                                        class="card-img-top object-fit-cover" alt="Imagen City Tour Mendoza"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">City Tour Mendoza</h5>
+                                        <p class="card-text custom-text">Recorrido por el casco histórico y principales
+                                            atractivos de Mendoza.</p>
+
+                                        <button id="toggleBtn4" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info4" onclick="toggleInfo(4)">
+                                            Ver más
+                                        </button>
+
+                                        <div id="info4" class="collapse mt-2">
+                                            <p>Explora Mendoza visitando el casco histórico, plazas principales, Área
+                                                Fundacional, Paseo "La Alameda", Casa de Gobierno, Parque General San
+                                                Martín y el mirador del Cerro de la Gloria.</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Almuerzo</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Martes, jueves y sábados, de 08:30 hs a
+                                                12:30 hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
+                                                lentes de sol.</p>
+                                            <a id="whatsappBtn4"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20City%20Tour%20Mendoza"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 5: Reserva Villavicencio -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-05.jpg"
+                                        class="card-img-top object-fit-cover" alt="Imagen Reserva Villavicencio"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Reserva Villavicencio</h5>
+                                        <p class="card-text custom-text">Excursión de medio día para conocer y
+                                            fotografiar la Precordillera y la Quebrada de Villavicencio, de la mano de
+                                            guías locales de la
+                                            reserva.</p>
+
+                                        <button id="toggleBtn5" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info5" onclick="toggleInfo(5)">
+                                            Ver más
+                                        </button>
+
+                                        <div id="info5" class="collapse mt-2">
+                                            <p>Allí podrás tomar fotos de la quebrada de Villavicencio desde la altura;
+                                                y conocerás el Casco Histórico del Hotel Villavicencio y sus jardines,
+                                                de la mano de guías.</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Entrada y visita a los jardines e inmediaciones del hotel</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Miércoles y sábados, de 08:00 hs a
+                                                13:30 hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
+                                                protector solar y lentes de sol.</p>
+                                            <a id="whatsappBtn5"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Reserva%20Villavicencio"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 6: Valle de Uco y Cordón del Plata -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-06.jpg"
+                                        class="card-img-top object-fit-cover"
+                                        alt="Imagen Valle de Uco y Cordón del Plata"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Valle de Uco y Cordón del Plata</h5>
+                                        <p class="card-text custom-text">Recorrido por el Valle de Uco con paradas
+                                            panorámicas y visita a bodegas.</p>
+
+                                        <button id="toggleBtn6" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info6" onclick="toggleInfo(6)">
+                                            Ver más
+                                        </button>
+
+                                        <div id="info6" class="collapse mt-2">
+                                            <p>Disfruta de un día en el Valle de Uco: visita el punto panorámico de
+                                                Cristo Rey, el Manzano Histórico, el corredor productivo y realiza una
+                                                visita a Bodega Atamisque (degustación no incluida). Además, tendrás
+                                                almuerzo en un restaurante criollo (no incluido).</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                            </ul>
+                                            <p><strong>No incluye:</strong></p>
+                                            <ul>
+                                                <li>Almuerzo</li>
+                                                <li>Entrada a Bodega Atamisque</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Viernes, de 08:00 hs a 18:00 hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
+                                                protector solar y lentes de sol.</p>
+                                            <a id="whatsappBtn6"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Valle%20de%20Uco%20y%20Cordón%20del%20Plata"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta 7: Bodegueando entre Vinos y Tradición -->
+                            <div class="col-12 mb-3">
+                                <div class="card mb-3">
+                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-07.jpg"
+                                        class="card-img-top object-fit-cover"
+                                        alt="Imagen Bodegueando entre Vinos y Tradición"
+                                        style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title custom-title">Bodegueando entre Vinos y Tradición</h5>
+                                        <p class="card-text custom-text">Tour que incluye visita a una destilería y dos
+                                            bodegas (Norton o Chandon, Carmine Granata, Hilbing & Franke), con
+                                            degustación y almuerzo en bodegón.</p>
+
+                                        <button id="toggleBtn7" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info7" onclick="toggleInfo(7)">
+                                            Ver más
+                                        </button>
+
+                                        <div id="info7" class="collapse mt-2">
+                                            <p>Explora la tradición vitivinícola visitando una destilería y dos bodegas.
+                                                Disfruta de un almuerzo en bodegón que incluye una gran picada de
+                                                quesos, fiambres, encurtidos, verduras asadas, tapas calientes, bebidas
+                                                (vino Malbec 2020, gaseosa y agua) y un delicioso postre.</p>
+                                            <p><strong>Incluye:</strong></p>
+                                            <ul>
+                                                <li>Guía bilingüe</li>
+                                                <li>Transporte en modernas unidades</li>
+                                                <li>Visita a 3 bodegas con degustación</li>
+                                                <li>Almuerzo en bodegón</li>
+                                            </ul>
+                                            <p><strong>Días y horarios:</strong> Martes, jueves y sábados, de 08:00 hs a
+                                                17:00 hs.</p>
+                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
+                                                lentes de sol.</p>
+                                            <a id="whatsappBtn7"
+                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Bodegueando%20entre%20Vinos%20y%20Tradición"
+                                                class="btn btn-success w-100 mt-2" target="_blank">
+                                                Contratar experiencia por WhatsApp!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container mt-5">
+            <section id="wine-tours-section">
+                <h2 class="text-center my-5">Wine Tours</h2>
+                <div class="row justify-content-center mx-auto px-0">
+                    <div class="row">
+                        <!-- Tarjeta 1: Degustando Mendoza -->
+                        <div class="col-12 mb-3">
+                            <div class="card mb-3">
+                                <img src="../recursos/winetoursDegustando.jpg" class="card-img-top object-fit-cover"
+                                    alt="Imagen Degustando Mendoza" style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title custom-title">Degustando Mendoza</h5>
+                                    <p class="card-text custom-text">
+                                        Degusta gin premiado, aceite de oliva de élite y vinos maridados en un recorrido
+                                        único por Mendoza.
+                                    </p>
+
+                                    <button id="toggleBtn1WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info1WT" onclick="toggleInfoWT(1)">
+                                        Ver más
+                                    </button>
+
+                                    <div id="info1WT" class="collapse mt-2">
+                                        <p>
+                                            Explora los sabores de Mendoza: degusta el premiado gin de Hilbing Franke,
+                                            prueba el aceite de oliva extra virgen de Laur, y disfruta un menú maridado
+                                            con vinos en una prestigiosa bodega.
+                                        </p>
+                                        <p><strong>Incluye:</strong></p>
+                                        <ul>
+                                            <li>Visitas guiadas y degustaciones en destilería y aceitera (o similares)
+                                            </li>
+                                            <li>Almuerzo con menú de pasos maridado en bodega Trivento, Monte Quieto o
+                                                similar</li>
+                                            <li>Vehículo de alta gama con chofer profesional</li>
+                                            <li>Salidas de lunes a sábado</li>
+                                        </ul>
+                                        <a id="whatsappBtn1WT"
+                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Wine%20Tours"
+                                            class="btn btn-success w-100 mt-2" target="_blank">
+                                            Contratar experiencia por WhatsApp!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2: Vinos de Altura -->
+                        <div class="col-12 mb-3">
+                            <div class="card mb-3">
+                                <img src="../recursos/winetoursVinos_Mesa%20de%20trabajo%201.jpg"
+                                    class="card-img-top object-fit-cover" alt="Imagen Vinos de Altura"
+                                    style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title custom-title">Vinos de Altura</h5>
+                                    <p class="card-text custom-text">
+                                        Degusta vinos de altura, visita bodegas exclusivas y disfruta un almuerzo
+                                        maridado en un viaje único por Valle de Uco.
+                                    </p>
+
+                                    <button id="toggleBtn2WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info2WT" onclick="toggleInfoWT(2)">
+                                        Ver más
+                                    </button>
+
+                                    <div id="info2WT" class="collapse mt-2">
+                                        <p>
+                                            Explora Valle de Uco en un recorrido único: degusta vinos de alta gama
+                                            cultivados a más de 1.000 m.s.n.m., visita bodegas exclusivas y disfruta un
+                                            almuerzo maridado en un entorno mágico.
+                                        </p>
+                                        <p><strong>Incluye:</strong></p>
+                                        <ul>
+                                            <li>Visitas guiadas y degustación en dos bodegas (ej. Andeluna, Familia
+                                                Blanco, etc.)</li>
+                                            <li>Menú de pasos maridado en una tercera bodega (ej. Andeluna o La Azul)
+                                            </li>
+                                            <li>Vehículo de alta gama con chofer profesional</li>
+                                            <li>Salidas de lunes a domingo</li>
+                                        </ul>
+                                        <a id="whatsappBtn2WT"
+                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Vinos%20de%20Altura"
+                                            class="btn btn-success w-100 mt-2" target="_blank">
+                                            Contratar experiencia por WhatsApp!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3: Velas & Wines -->
+                        <div class="col-12 mb-3">
+                            <div class="card mb-3">
+                                <img src="../recursos/winetoursVelas.jpg" class="card-img-top object-fit-cover"
+                                    alt="Imagen Velas & Wines" style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title custom-title">Velas & Wines</h5>
+                                    <p class="card-text custom-text">
+                                        Almuerza en Ojo de Agua con vistas a los Andes y navega a vela en Potrerillos
+                                        degustando vinos de garage.
+                                    </p>
+
+                                    <button id="toggleBtn3WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info3WT" onclick="toggleInfoWT(3)">
+                                        Ver más
+                                    </button>
+
+                                    <div id="info3WT" class="collapse mt-2">
+                                        <p>
+                                            Descubre Luján de Cuyo con un almuerzo maridado en la bodega Ojo de Agua y,
+                                            luego, navega a vela en Potrerillos mientras degustas vinos de garage.
+                                        </p>
+                                        <p><strong>Incluye:</strong></p>
+                                        <ul>
+                                            <li>Paseo en embarcación a vela con degustación (opcional: tabla de picada)
+                                            </li>
+                                            <li>Charla técnica</li>
+                                            <li>Vehículo de alta gama con chofer profesional</li>
+                                            <li>Salidas de lunes a viernes</li>
+                                        </ul>
+                                        <a id="whatsappBtn3WT"
+                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Velas%20%26%20Wines"
+                                            class="btn btn-success w-100 mt-2" target="_blank">
+                                            Contratar experiencia por WhatsApp!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 4: Caminos del Malbec D.O.C. -->
+                        <div class="col-12 mb-3">
+                            <div class="card mb-3">
+                                <img src="../recursos/winetoursDoc.jpg" class="card-img-top object-fit-cover"
+                                    alt="Imagen Caminos del Malbec D.O.C." style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title custom-title">Caminos del Malbec D.O.C.</h5>
+                                    <p class="card-text custom-text">
+                                        Descubre el Malbec D.O.C. en bodegas de Luján y disfruta un menú maridado.
+                                    </p>
+
+                                    <button id="toggleBtn4WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info4WT" onclick="toggleInfoWT(4)">
+                                        Ver más
+                                    </button>
+
+                                    <div id="info4WT" class="collapse mt-2">
+                                        <p>
+                                            Explora Luján de Cuyo tras las huellas del Malbec D.O.C. y disfruta una
+                                            experiencia vinícola y gastronómica única.
+                                        </p>
+                                        <p><strong>Incluye:</strong></p>
+                                        <ul>
+                                            <li>Visitas guiadas y degustación en dos bodegas</li>
+                                            <li>Menú de pasos maridado en una tercera bodega</li>
+                                            <li>Vehículo de alta gama con chofer profesional</li>
+                                            <li>Salidas de lunes a sábado</li>
+                                        </ul>
+                                        <a id="whatsappBtn4WT"
+                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Caminos%20del%20Malbec%20D.O.C"
+                                            class="btn btn-success w-100 mt-2" target="_blank">
+                                            Contratar experiencia por WhatsApp!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
-    
-    
-    
-      
-</main>
 
-<!-- Pie de pagina -->
-<footer class="footer">
-  <ul class="social-icon">
-    
-    <li class="icon-elem">
-      <a href="https://www.instagram.com/mirador_de_estrellas_viajes/" class="icon">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-    </li>
-    <li class="icon-elem">
-      <a href="https://wa.me/5492615567507?text=Hola,%20quiero%20contactarme%20por..." class="icon">
-        <ion-icon name="logo-whatsapp"></ion-icon>
-      </a>
-    </li>
-    <li class="icon-elem">
-      <a href="" class="icon">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a>
-    </li>
-    <li class="icon-elem">
-      <a href="#" class="icon" id="copyEmail">
-          <ion-icon name="mail-outline"></ion-icon>
-      </a>
-  </li>
-  
-  </ul>
-  <ul class="menu">
-    <li class="menu-elem">
-      <a href="../index.html" class="menu-icon"> Inicio </a>
-    </li>
-    <li class="menu-elem">
-      <a href="./destinos.html" class="menu-icon"> Destinos </a>
-    </li>
-    <li class="menu-elem">
-      <a href="./about.html" class="menu-icon"> Sobre nosotros </a>
-    </li>
-    <li class="menu-elem">
-      <a href="./contacto.html" class="menu-icon"> Contacto </a>
-    </li>
-    <li class="menu-elem">
-      <a href="./legal.html" class="menu-icon"> Legal </a>
-    </li>
-  </ul>
-  <p class="text">EVT legajo 16169 - Disposición 192/2015</p>
-  <p class="text">2025 | Todos los derechos reservados</p>
-</footer>
-  <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="../js/main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+
+
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <ul class="social-icon">
+
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/mirador_de_estrellas_viajes/" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://wa.me/5492615567507?text=Hola,%20quiero%20contactarme%20por..." class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#" class="icon" id="copyEmail">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="../index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+                <a href="./destinos.html" class="menu-icon"> Destinos </a>
+            </li>
+            <li class="menu-elem">
+                <a href="./about.html" class="menu-icon"> Sobre nosotros </a>
+            </li>
+            <li class="menu-elem">
+                <a href="./contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+            <li class="menu-elem">
+                <a href="./legal.html" class="menu-icon"> Legal </a>
+            </li>
+        </ul>
+        <p class="text">EVT legajo 16169 - Disposición 192/2015</p>
+        <p class="text">2025 | Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/filtro.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
