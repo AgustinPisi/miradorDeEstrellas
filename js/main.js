@@ -1,3 +1,16 @@
+let llevarAExcursiones=document.getElementById("llevarAExcursiones"); 
+llevarAExcursiones.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.setItem("seleccion", "excursiones")
+    window.location.href = "./sections/destinos.html"
+});
+
+let llevarAWineTours=document.getElementById("llevarAWineTours"); 
+llevarAWineTours.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.setItem("seleccion", "wine-tours")
+    window.location.href = "./sections/destinos.html"
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
