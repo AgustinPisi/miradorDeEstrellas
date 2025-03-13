@@ -1,21 +1,10 @@
-let llevarAExcursiones=document.getElementById("llevarAExcursiones"); 
-llevarAExcursiones.addEventListener("click", function(event) {
-    event.preventDefault();
-    localStorage.setItem("seleccion", "excursiones")
-    window.location.href = "./sections/destinos.html"
-});
-
-let llevarAWineTours=document.getElementById("llevarAWineTours"); 
-llevarAWineTours.addEventListener("click", function(event) {
-    event.preventDefault();
-    localStorage.setItem("seleccion", "wine-tours")
-    window.location.href = "./sections/destinos.html"
-});
 
 
 document.addEventListener("DOMContentLoaded", function() {
     const copyButton = document.getElementById("copyEmail");
-
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 100);
     if (!copyButton) {
         console.error("El botón de copiar no existe en el DOM.");
         return;
@@ -50,14 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-window.addEventListener("load", function() {
-    setTimeout(() => {
-        window.scrollTo(0, 0);
-    }, 100); // Espera 100ms antes de hacer el scroll
+let llevarAExcursiones=document.getElementById("llevarAExcursiones"); 
+llevarAExcursiones.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.setItem("seleccion", "excursiones")
+    window.location.href = "./sections/destinos.html"
 });
 
-
+let llevarAWineTours=document.getElementById("llevarAWineTours"); 
+llevarAWineTours.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.setItem("seleccion", "wine-tours")
+    window.location.href = "./sections/destinos.html"
+});
 
 document.addEventListener("scroll", function () {
     const carousel = document.getElementById("carouselExampleInterval");
