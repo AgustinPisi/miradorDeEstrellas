@@ -113,3 +113,18 @@ function toggleInfo(id) {
     });
 }
 
+function toggleInfoWT(id) {
+    let info = document.getElementById("info" + id + "WT");
+    let btn = document.getElementById("toggleBtn" + id + "WT");
+    let whatsappBtn = document.getElementById("whatsappBtn" + id + "WT");
+
+    info.addEventListener("hidden.bs.collapse", function () {
+        btn.textContent = "Ver más";
+        whatsappBtn.style.display = "none";
+    });
+
+    info.addEventListener("shown.bs.collapse", function () {
+        btn.textContent = "Ver menos";
+        whatsappBtn.style.display = "block";
+    });
+}

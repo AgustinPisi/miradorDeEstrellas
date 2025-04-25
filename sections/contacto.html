@@ -37,19 +37,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto d-flex">
             <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="../index.html">INICIO</a>
+              <a class="nav-link active text-light nav-text-hover" aria-current="page" href="../index.html" data-i18n="inicio.title">INICIO</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="destinos.html">EXPERIENCIAS</a>
+              <a class="nav-link text-light nav-text-hover" href="destinos.html" data-i18n="experiencias.title">EXPERIENCIAS</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="about.html">SOBRE NOSOTROS</a>
+              <a class="nav-link text-light nav-text-hover" href="about.html" data-i18n="about.title">SOBRE NOSOTROS</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link text-light nav-text-hover" href="contacto.html">CONTACTO</a>
+              <a class="nav-link text-light nav-text-hover" href="contacto.html" data-i18n="contacto.title">CONTACTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-light nav-text-hover" href="legal.html">LEGAL</a>
+              <a class="nav-link text-light nav-text-hover" href="legal.html " data-i18n="legal.title">LEGAL</a>
             </li>
           </ul>
         </div>
@@ -61,39 +61,39 @@
 
 <!-- Contenido principal -->
 <div class="container mt-5" style="max-width: 600px; margin: 0 auto;" data-aos="fade-up">
-  <h2>Contactanos por correo</h2>
-  <p class="mb-4 textito">Te ayudamos a organizar tus mejores momentos.</p>
+  <h2  data-i18n="contact.title">Contactanos por correo</h2>
+  <p class="mb-4 textito" data-i18n="contact.subtitle">Te ayudamos a organizar tus mejores momentos.</p>
   <p id="returnMessage"></p>
 
   <form id="contact-form">
       <div class="form-group">
-          <label for="nombreDelUsuario">Nombre y Apellido</label>
+          <label for="nombreDelUsuario" data-i18n="form.name.label">Nombre y Apellido</label>
           <input type="text" class="form-control" id="nombreDelUsuario" name="nombreDelUsuario" required>
       </div>
 
       <!-- Email -->
       <div class="form-group">
-          <label for="emailUsuario">Correo Electrónico</label>
+          <label for="emailUsuario" data-i18n="form.email.label">Correo Electrónico</label>
           <input type="email" class="form-control" id="emailUsuario" name="emailUsuario" required>
       </div>
 
       <!-- Teléfono -->
       <div class="form-group">
-          <label for="telefonoUsuario">Teléfono</label>
+          <label for="telefonoUsuario" data-i18n="form.phone.label">Teléfono</label>
           <input type="text" class="form-control" id="telefonoUsuario" name="telefonoUsuario" required>
       </div>
 
       <!-- Mensaje -->
       <div class="form-group">
-          <label for="mensaje">Mensaje</label>
+          <label for="mensaje" data-i18n="form.message.label">Mensaje</label>
           <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
       </div>
 
       <!-- Botón de enviar -->
-      <button type="submit" class="btn custom-btn botoncito btn-primary">ENVIAR</button>
+      <button type="submit" class="btn custom-btn botoncito btn-primary " data-i18n="form.send">ENVIAR</button>
   </form>
 
-  <h2>O mandanos un Whastapp</h2>
+  <h2 data-i18n="contact.whatsapp.title">O mandanos un Whastapp</h2>
   <a class="whatsapp-container whatsapp-icon" href="https://wa.me/5492615567507?text=Hola,%20quiero%20contactarme%20por..." target="_blank">
     <img src="../recursos/WhatsAppWine-01.svg" alt="WhatsApp" width="80" height="80">
 </a>
@@ -129,19 +129,19 @@
   </ul>
   <ul class="menu">
     <li class="menu-elem">
-      <a href="../index.html" class="menu-icon"> Inicio </a>
+      <a href="../index.html" class="menu-icon" data-i18n="inicio.title"> Inicio </a>
     </li>
     <li class="menu-elem">
-      <a href="./destinos.html" class="menu-icon"> Destinos </a>
+      <a href="destinos.html" class="menu-icon" data-i18n="experiencias.title"> Destinos </a>
     </li>
     <li class="menu-elem">
-      <a href="./about.html" class="menu-icon"> Sobre nosotros </a>
+      <a href="about.html" class="menu-icon" data-i18n="about.title"> Sobre nosotros </a>
     </li>
     <li class="menu-elem">
-      <a href="./contacto.html" class="menu-icon"> Contacto </a>
+      <a href="contacto.html" class="menu-icon" data-i18n="contacto.title"> Contacto </a>
     </li>
     <li class="menu-elem">
-      <a href="./legal.html" class="menu-icon"> Legal </a>
+      <a href="legal.html" class="menu-icon" data-i18n="legal.title"> Legal </a>
     </li>
   </ul>
   <p class="text">EVT legajo 16169 - Disposición 192/2015</p>
@@ -159,9 +159,22 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
+<script src="../js/lang.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<!-- Language Switcher -->
+<div id="language-switcher" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: white; padding: 5px; border-radius: 10px;">
+  <button type="button" onclick="location.reload()" title="Español" style="margin:5px;">
+    <img src="https://flagcdn.com/w40/es.png" alt="ES" width="25"> ES
+  </button>
+  <button type="button" onclick="setLanguage('en')" title="English" style="margin:5px;">
+    <img src="https://flagcdn.com/w40/us.png" alt="EN" width="25"> EN
+  </button>
+  <button type="button" onclick="setLanguage('pt')" title="Português" style="margin:5px;">
+    <img src="https://flagcdn.com/w40/br.png" alt="PT" width="25"> PT
+  </button>
+</div>
 </body>
 </html>

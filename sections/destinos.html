@@ -43,23 +43,23 @@
                 <!-- Resto de barra -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto d-flex">
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light nav-text-hover" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link active text-light nav-text-hover" href="#">EXPERIENCIAS</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light nav-text-hover" href="about.html">SOBRE NOSOTROS</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light nav-text-hover" href="contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light nav-text-hover" href="legal.html">LEGAL</a>
-                        </li>
+                      <li class="nav-item me-4">
+                        <a class="nav-link active text-light nav-text-hover" aria-current="page" href="../index.html" data-i18n="inicio.title">INICIO</a>
+                      </li>
+                      <li class="nav-item me-4">
+                        <a class="nav-link text-light nav-text-hover" href="destinos.html" data-i18n="experiencias.title">EXPERIENCIAS</a>
+                      </li>
+                      <li class="nav-item me-4">
+                        <a class="nav-link text-light nav-text-hover" href="about.html" data-i18n="about.title">SOBRE NOSOTROS</a>
+                      </li>
+                      <li class="nav-item me-4">
+                        <a class="nav-link text-light nav-text-hover" href="contacto.html" data-i18n="contacto.title">CONTACTO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light nav-text-hover" href="legal.html " data-i18n="legal.title">LEGAL</a>
+                      </li>
                     </ul>
-                </div>
+                  </div>
             </div>
         </nav>
     </header>
@@ -67,329 +67,342 @@
     <!-- Contenido principal -->
     <main id="main-destinos" class="contenido-con-sticky" data-aos="fade-up">
         <div class="text-center my-3">
-            <h5 class="card-title custom-title textoFiltrito">Filtrar por:</h5>
-            <button class="btn btn-primary filter-btn custom-btn" data-filter="all">Mostrar Todo</button>
-            <button class="btn btn-primary filter-btn custom-btn" data-filter="excursiones">Excursiones</button>
-            <button class="btn btn-primary filter-btn custom-btn" data-filter="wine-tours">Wine Tours</button>
+            <h5 class="card-title custom-title textoFiltrito" data-i18n="filters.title">Filtrar por:</h5>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="all" data-i18n="filters.all">Mostrar Todo</button>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="excursiones" data-i18n="filters.excursiones">Excursiones</button>
+            <button class="btn btn-primary filter-btn custom-btn" data-filter="wine-tours" data-i18n="filters.winetours">Wine Tours</button>
         </div>
 
         <div class="container mt-5">
             <section id="excursiones-section">
-                <h2 class="text-center my-5">Excursiones</h2>
+                <h2 class="text-center my-5" data-i18n="title.excursiones" >Excursiones</h2>
                 <div class="row justify-content-center">
                     <div class="row justify-content-center mx-auto px-0">
                         <div class="row">
                             <!-- Tarjeta 1: Alta Montaña y Puente del Inca -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-01.jpg"
-                                        class="card-img-top object-fit-cover"
-                                        alt="Imagen Alta Montaña y Puente del Inca"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Alta Montaña y Puente del Inca</h5>
-                                        <p class="card-text custom-text">Excursión de día completo por la cordillera de
-                                            Los Andes.</p>
-
-                                        <button id="toggleBtn1" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info1" onclick="toggleInfo(1)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info1" class="collapse mt-2">
-                                            <p>Excursión de día completo a la cordillera de Los Andes. Se pasará por los
-                                                valles de Potrerillos y Uspallata, el centro de ski Los Penitentes, el
-                                                Puente del Inca y el mirador del Cerro Aconcagua, hasta llegar al límite
-                                                con Chile, en Las Cuevas (3.200 mts).</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Almuerzo</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Lunes a domingos, de 07:30 hs a 20:00
-                                                hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
-                                                protector solar y lentes de sol.</p>
-                                            <a id="whatsappBtn1"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Alta%20Montaña%20y%20Puente%20del%20Inca"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-01.jpg"
+                                       class="card-img-top object-fit-cover"
+                                       alt="Imagen Alta Montaña y Puente del Inca"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.altamontania.title">Alta Montaña y Puente del Inca</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.altamontania.subtitle">Excursión de día completo por la cordillera de Los Andes.</p>
+                              
+                                    <button id="toggleBtn1" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info1" onclick="toggleInfo(1)"
+                                            data-i18n="excursion.altamontania.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info1" class="collapse mt-2">
+                                      <p data-i18n="excursion.altamontania.description">
+                                        Excursión de día completo a la cordillera de Los Andes. Se pasará por los valles de Potrerillos y Uspallata,
+                                        el centro de ski Los Penitentes, el Puente del Inca y el mirador del Cerro Aconcagua, hasta llegar al límite
+                                        con Chile, en Las Cuevas (3.200 mts).
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.altamontania.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.altamontania.include1">Guía bilingüe</li>
+                                        <li data-i18n="excursion.altamontania.include2">Transporte en modernas unidades</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.altamontania.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.altamontania.noinclude1">Almuerzo</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.altamontania.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.altamontania.schedule">Lunes a domingos, de 07:30 hs a 20:00 hs.</span>
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.altamontania.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.altamontania.recommendations">Ropa de abrigo, calzado cómodo, protector solar y lentes de sol.</span>
+                                      </p>
+                              
+                                      <a id="whatsappBtn1"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Alta%20Montaña%20y%20Puente%20del%20Inca"
+                                         class="btn btn-success w-100 mt-2" target="_blank"
+                                         data-i18n="excursion.altamontania.whatsapp">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
+                              
 
                             <!-- Tarjeta 2: Tour de Bodegas -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-02.jpg"
-                                        class="card-img-top object-fit-cover" alt="Imagen Tour de Bodegas"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Tour de Bodegas</h5>
-                                        <p class="card-text custom-text">Recorrido de medio día visitando dos bodegas y
-                                            una fábrica de aceite de oliva.</p>
-
-                                        <button id="toggleBtn2" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info2" onclick="toggleInfo(2)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info2" class="collapse mt-2">
-                                            <p>Tour de vinos de medio día. Se realizan visitas a dos Bodegas con
-                                                degustaciones de vinos, buscando encontrar un contraste entre las
-                                                mismas. Posteriormente, se visitará una fábrica de aceite de oliva,
-                                                donde podrás disfrutar de sus productos.</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Entradas y degustaciones</li>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Almuerzo</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Lunes a sábados, de 14:30 hs a 19:00
-                                                hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
-                                                lentes de sol.</p>
-                                            <a id="whatsappBtn2"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Tour%20de%20Bodegas"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-02.jpg"
+                                       class="card-img-top object-fit-cover" alt="Imagen Tour de Bodegas"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.tourbodegas.title">Tour de Bodegas</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.tourbodegas.subtitle">
+                                      Recorrido de medio día visitando dos bodegas y una fábrica de aceite de oliva.
+                                    </p>
+                              
+                                    <button id="toggleBtn2" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info2" onclick="toggleInfo(2)"
+                                            data-i18n="excursion.tourbodegas.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info2" class="collapse mt-2">
+                                      <p data-i18n="excursion.tourbodegas.description">
+                                        Tour de vinos de medio día. Se visitarán dos bodegas con degustaciones incluidas, buscando encontrar un contraste entre las mismas. Posteriormente, conocerás una fábrica de aceite de oliva, donde podrás disfrutar de sus productos.
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.tourbodegas.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.tourbodegas.include1">Entradas y degustaciones</li>
+                                        <li data-i18n="excursion.tourbodegas.include2">Guía bilingüe</li>
+                                        <li data-i18n="excursion.tourbodegas.include3">Transporte en modernas unidades</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.tourbodegas.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.tourbodegas.noinclude1">Almuerzo</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.tourbodegas.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.tourbodegas.schedule">Lunes a sábados, de 14:30 hs a 19:00 hs.</span>
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.tourbodegas.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.tourbodegas.recommendations">Calzado cómodo, protector solar y lentes de sol.</span>
+                                      </p>
+                              
+                                      <a id="whatsappBtn2"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Tour%20de%20Bodegas"
+                                         class="btn btn-success w-100 mt-2"
+                                         target="_blank"
+                                         data-i18n="excursion.tourbodegas.whatsapp">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
+                              
 
                             <!-- Tarjeta 3: Cañón del Atuel y San Rafael -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-03.jpg"
-                                        class="card-img-top object-fit-cover" alt="Imagen Cañón del Atuel y San Rafael"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Cañón del Atuel y San Rafael</h5>
-                                        <p class="card-text custom-text">Excursión de día completo por el Cañón del
-                                            Atuel y San Rafael.</p>
-
-                                        <button id="toggleBtn3" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info3" onclick="toggleInfo(3)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info3" class="collapse mt-2">
-                                            <p>Descubre el sur de Mendoza, allí serás sorprendido por la belleza del
-                                                Cañón del Atuel, con una explosión de colores y exóticas formaciones
-                                                rocosas junto a espejos de agua. Luego de un recorrido por la ciudad de
-                                                San Rafael se regresa al centro de Mendoza..</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Almuerzo</li>
-                                                <li>Actividades de rafting y catamarán</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Jueves y domingos, de 07:00 hs a 21:00
-                                                hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Traje de baño, muda de ropa, calzado
-                                                impermeable, protector solar y lentes de sol.</p>
-                                            <a id="whatsappBtn3"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Cañón%20del%20Atuel%20y%20San%20Rafael"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/canonatuel.JPG"
+                                       class="card-img-top object-fit-cover" alt="Imagen Cañón del Atuel y San Rafael"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.atuel.title">Cañón del Atuel y San Rafael</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.atuel.subtitle">Excursión de día completo por el Cañón del Atuel y San Rafael.</p>
+                              
+                                    <button id="toggleBtn3" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info3" onclick="toggleInfo(3)"
+                                            data-i18n="excursion.atuel.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info3" class="collapse mt-2">
+                                      <p data-i18n="excursion.atuel.description">
+                                        Descubre el sur de Mendoza, allí serás sorprendido por la belleza natural del Cañón del Atuel, con una explosión de colores y exóticas formaciones rocosas junto a espejos de agua. Luego de un recorrido por la ciudad de San Rafael regresaremos a la Ciudad de Mendoza.
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.atuel.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.atuel.include1">Guía bilingüe</li>
+                                        <li data-i18n="excursion.atuel.include2">Transporte en modernas unidades</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.atuel.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.atuel.noinclude1">Almuerzo</li>
+                                        <li data-i18n="excursion.atuel.noinclude2">Actividades de rafting y catamarán</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.atuel.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.atuel.schedule">Jueves y domingos, de 07:00 hs a 21:00 hs.</span>
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.atuel.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.atuel.recommendations">Traje de baño, muda de ropa, calzado impermeable, protector solar y lentes de sol.</span>
+                                      </p>
+                              
+                                      <a id="whatsappBtn3"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Cañón%20del%20Atuel%20y%20San%20Rafael"
+                                         class="btn btn-success w-100 mt-2"
+                                         data-i18n="excursion.atuel.whatsapp"
+                                         target="_blank">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
 
                             <!-- Tarjeta 4: City Tour -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-04.jpg"
-                                        class="card-img-top object-fit-cover" alt="Imagen City Tour Mendoza"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">City Tour Mendoza</h5>
-                                        <p class="card-text custom-text">Recorrido por el casco histórico y principales
-                                            atractivos de Mendoza.</p>
-
-                                        <button id="toggleBtn4" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info4" onclick="toggleInfo(4)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info4" class="collapse mt-2">
-                                            <p>Explora Mendoza visitando el casco histórico, plazas principales, Área
-                                                Fundacional, Paseo "La Alameda", Casa de Gobierno, Parque General San
-                                                Martín y el mirador del Cerro de la Gloria.</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Almuerzo</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Martes, jueves y sábados, de 08:30 hs a
-                                                12:30 hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
-                                                lentes de sol.</p>
-                                            <a id="whatsappBtn4"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20City%20Tour%20Mendoza"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-04.jpg"
+                                       class="card-img-top object-fit-cover" alt="Imagen City Tour Mendoza"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.citytour.title">City Tour Mendoza</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.citytour.subtitle">
+                                      Recorrido por el casco histórico y principales atractivos de Mendoza.
+                                    </p>
+                              
+                                    <button id="toggleBtn4" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info4" onclick="toggleInfo(4)"
+                                            data-i18n="excursion.citytour.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info4" class="collapse mt-2">
+                                      <p data-i18n="excursion.citytour.description">
+                                        Explora Mendoza, visitando su casco histórico, plazas principales, Área Fundacional,
+                                        Paseo "La Alameda", Casa de Gobierno, Parque General San Martín y el mirador del Cerro de la Gloria.
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.citytour.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.citytour.include1">Guía bilingüe</li>
+                                        <li data-i18n="excursion.citytour.include2">Transporte en modernas unidades</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.citytour.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.citytour.noinclude1">Almuerzo</li>
+                                      </ul>
+                              
+                                      <p>
+                                        <strong data-i18n="excursion.citytour.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.citytour.schedule">Martes, jueves y sábados, de 08:30 hs a 12:30 hs.</span>
+                                      </p>
+                              
+                                      <p>
+                                        <strong data-i18n="excursion.citytour.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.citytour.recommendations">
+                                          Calzado cómodo, protector solar y lentes de sol.
+                                        </span>
+                                      </p>
+                              
+                                      <a id="whatsappBtn4"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20City%20Tour%20Mendoza"
+                                         class="btn btn-success w-100 mt-2" target="_blank"
+                                         data-i18n="excursion.citytour.whatsapp">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
 
                             <!-- Tarjeta 5: Reserva Villavicencio -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-05.jpg"
-                                        class="card-img-top object-fit-cover" alt="Imagen Reserva Villavicencio"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Reserva Villavicencio</h5>
-                                        <p class="card-text custom-text">Excursión de medio día para conocer y
-                                            fotografiar la Precordillera y la Quebrada de Villavicencio, de la mano de
-                                            guías locales de la
-                                            reserva.</p>
-
-                                        <button id="toggleBtn5" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info5" onclick="toggleInfo(5)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info5" class="collapse mt-2">
-                                            <p>Allí podrás tomar fotos de la quebrada de Villavicencio desde la altura;
-                                                y conocerás el Casco Histórico del Hotel Villavicencio y sus jardines,
-                                                de la mano de guías.</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Entrada y visita a los jardines e inmediaciones del hotel</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Miércoles y sábados, de 08:00 hs a
-                                                13:30 hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
-                                                protector solar y lentes de sol.</p>
-                                            <a id="whatsappBtn5"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Reserva%20Villavicencio"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-05.jpg"
+                                       class="card-img-top object-fit-cover" alt="Imagen Reserva Villavicencio"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.villavicencio.title">Reserva Villavicencio</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.villavicencio.subtitle">
+                                      Tour de medio día por la Reserva Natural Villavicencio donde podrás tomar fotos de la quebrada desde la altura y conocer el Casco Histórico del Hotel Villavicencio y sus jardines, de la mano de guías especializados.
+                                    </p>
+                              
+                                    <button id="toggleBtn5" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info5" onclick="toggleInfo(5)"
+                                            data-i18n="excursion.villavicencio.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info5" class="collapse mt-2">
+                                      <p data-i18n="excursion.villavicencio.description">
+                                        Allí podrás tomar fotos de la quebrada de Villavicencio desde la altura; y conocerás el Casco Histórico del Hotel Villavicencio y sus jardines, de la mano de guías.
+                                      </p>
+                                      <p><strong data-i18n="excursion.villavicencio.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.villavicencio.include1">Guía bilingüe</li>
+                                        <li data-i18n="excursion.villavicencio.include2">Transporte en modernas unidades</li>
+                                      </ul>
+                                      <p><strong data-i18n="excursion.villavicencio.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.villavicencio.noinclude1">Entrada y visita a los jardines e inmediaciones del hotel</li>
+                                      </ul>
+                                      <p><strong data-i18n="excursion.villavicencio.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.villavicencio.schedule">Miércoles y sábados, de 08:00 hs a 13:30 hs.</span>
+                                      </p>
+                                      <p><strong data-i18n="excursion.villavicencio.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.villavicencio.recommendations">Ropa de abrigo, calzado cómodo, protector solar y lentes de sol.</span>
+                                      </p>
+                                      <a id="whatsappBtn5"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Reserva%20Villavicencio"
+                                         class="btn btn-success w-100 mt-2" target="_blank"
+                                         data-i18n="excursion.villavicencio.whatsapp">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
 
                             <!-- Tarjeta 6: Valle de Uco y Cordón del Plata -->
                             <div class="col-12 mb-3">
                                 <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-06.jpg"
-                                        class="card-img-top object-fit-cover"
-                                        alt="Imagen Valle de Uco y Cordón del Plata"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Valle de Uco y Cordón del Plata</h5>
-                                        <p class="card-text custom-text">Recorrido por el Valle de Uco con paradas
-                                            panorámicas y visita a bodegas.</p>
-
-                                        <button id="toggleBtn6" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info6" onclick="toggleInfo(6)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info6" class="collapse mt-2">
-                                            <p>Disfruta de un día en el Valle de Uco: visita el punto panorámico de
-                                                Cristo Rey, el Manzano Histórico, el corredor productivo y realiza una
-                                                visita a Bodega Atamisque (degustación no incluida). Además, tendrás
-                                                almuerzo en un restaurante criollo (no incluido).</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                            </ul>
-                                            <p><strong>No incluye:</strong></p>
-                                            <ul>
-                                                <li>Almuerzo</li>
-                                                <li>Entrada a Bodega Atamisque</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Viernes, de 08:00 hs a 18:00 hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Ropa de abrigo, calzado cómodo,
-                                                protector solar y lentes de sol.</p>
-                                            <a id="whatsappBtn6"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Valle%20de%20Uco%20y%20Cordón%20del%20Plata"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
+                                  <img src="../recursos/valleuco.jpg"
+                                       class="card-img-top object-fit-cover"
+                                       alt="Imagen Valle de Uco y Cordón del Plata"
+                                       style="height: 200px; object-fit: cover;">
+                                  <div class="card-body">
+                                    <h5 class="card-title custom-title" data-i18n="excursion.valleuco.title">Valle de Uco y Cordón del Plata</h5>
+                                    <p class="card-text custom-text" data-i18n="excursion.valleuco.subtitle">Recorrido por el Valle de Uco con paradas panorámicas y visita a bodegas.</p>
+                              
+                                    <button id="toggleBtn6" class="btn btn-primary mt-auto custom-btn w-100"
+                                            data-bs-toggle="collapse" data-bs-target="#info6" onclick="toggleInfo(6)"
+                                            data-i18n="excursion.valleuco.vermas">
+                                      Ver más
+                                    </button>
+                              
+                                    <div id="info6" class="collapse mt-2">
+                                      <p data-i18n="excursion.valleuco.description">
+                                        Disfruta de un día en el Valle de Uco: visitando el punto panorámico del Cristo Rey, el Manzano Histórico, el corredor productivo y realizando un recorrido por una bodega de la zona (degustación no incluida). Pararemos en un restaurante criollo para el almuerzo (no incluido).
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.valleuco.includes">Incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.valleuco.include1">Guía bilingüe</li>
+                                        <li data-i18n="excursion.valleuco.include2">Transporte en modernas unidades</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.valleuco.notincludes">No incluye:</strong></p>
+                                      <ul>
+                                        <li data-i18n="excursion.valleuco.noinclude1">Almuerzo</li>
+                                        <li data-i18n="excursion.valleuco.noinclude2">Entrada a Bodega Atamisque</li>
+                                      </ul>
+                              
+                                      <p><strong data-i18n="excursion.valleuco.schedule_title">Días y horarios:</strong>
+                                        <span data-i18n="excursion.valleuco.schedule">Viernes, de 08:00 hs a 18:00 hs.</span>
+                                      </p>
+                              
+                                      <p><strong data-i18n="excursion.valleuco.recommendations_title">Recomendaciones:</strong>
+                                        <span data-i18n="excursion.valleuco.recommendations">Ropa de abrigo, calzado cómodo, protector solar y lentes de sol.</span>
+                                      </p>
+                              
+                                      <a id="whatsappBtn6"
+                                         href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Valle%20de%20Uco%20y%20Cordón%20del%20Plata"
+                                         class="btn btn-success w-100 mt-2" target="_blank"
+                                         data-i18n="excursion.valleuco.whatsapp">
+                                        Contratar experiencia por WhatsApp!
+                                      </a>
                                     </div>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
 
-                            <!-- Tarjeta 7: Bodegueando entre Vinos y Tradición -->
-                            <div class="col-12 mb-3">
-                                <div class="card mb-3">
-                                    <img src="../recursos/excursionesExcursiones_Mesa de trabajo 1-07.jpg"
-                                        class="card-img-top object-fit-cover"
-                                        alt="Imagen Bodegueando entre Vinos y Tradición"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title custom-title">Bodegueando entre Vinos y Tradición</h5>
-                                        <p class="card-text custom-text">Tour que incluye visita a una destilería y dos
-                                            bodegas (Norton o Chandon, Carmine Granata, Hilbing & Franke), con
-                                            degustación y almuerzo en bodegón.</p>
-
-                                        <button id="toggleBtn7" class="btn btn-primary mt-auto custom-btn w-100"
-                                            data-bs-toggle="collapse" data-bs-target="#info7" onclick="toggleInfo(7)">
-                                            Ver más
-                                        </button>
-
-                                        <div id="info7" class="collapse mt-2">
-                                            <p>Explora la tradición vitivinícola visitando una destilería y dos bodegas.
-                                                Disfruta de un almuerzo en bodegón que incluye una gran picada de
-                                                quesos, fiambres, encurtidos, verduras asadas, tapas calientes, bebidas
-                                                (vino Malbec 2020, gaseosa y agua) y un delicioso postre.</p>
-                                            <p><strong>Incluye:</strong></p>
-                                            <ul>
-                                                <li>Guía bilingüe</li>
-                                                <li>Transporte en modernas unidades</li>
-                                                <li>Visita a 3 bodegas con degustación</li>
-                                                <li>Almuerzo en bodegón</li>
-                                            </ul>
-                                            <p><strong>Días y horarios:</strong> Martes, jueves y sábados, de 08:00 hs a
-                                                17:00 hs.</p>
-                                            <p><strong>Recomendaciones:</strong> Calzado cómodo, protector solar y
-                                                lentes de sol.</p>
-                                            <a id="whatsappBtn7"
-                                                href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20la%20excursión%20Bodegueando%20entre%20Vinos%20y%20Tradición"
-                                                class="btn btn-success w-100 mt-2" target="_blank">
-                                                Contratar experiencia por WhatsApp!
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                         </div>
                     </div>
@@ -399,176 +412,179 @@
 
         <div class="container mt-5">
             <section id="wine-tours-section">
-                <h2 class="text-center my-5">Wine Tours</h2>
+                <h2 class="text-center my-5" data-i18n="title.tourwinetours">Wine Tours</h2>
                 <div class="row justify-content-center mx-auto px-0">
                     <div class="row">
                         <!-- Tarjeta 1: Degustando Mendoza -->
                         <div class="col-12 mb-3">
                             <div class="card mb-3">
-                                <img src="../recursos/winetoursDegustando.jpg" class="card-img-top object-fit-cover"
-                                    alt="Imagen Degustando Mendoza" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title custom-title">Degustando Mendoza</h5>
-                                    <p class="card-text custom-text">
-                                        Degusta gin premiado, aceite de oliva de élite y vinos maridados en un recorrido
-                                        único por Mendoza.
-                                    </p>
-
-                                    <button id="toggleBtn1WT" class="btn btn-primary mt-auto custom-btn w-100"
-                                        data-bs-toggle="collapse" data-bs-target="#info1WT" onclick="toggleInfoWT(1)">
-                                        Ver más
-                                    </button>
-
-                                    <div id="info1WT" class="collapse mt-2">
-                                        <p>
-                                            Explora los sabores de Mendoza: degusta el premiado gin de Hilbing Franke,
-                                            prueba el aceite de oliva extra virgen de Laur, y disfruta un menú maridado
-                                            con vinos en una prestigiosa bodega.
-                                        </p>
-                                        <p><strong>Incluye:</strong></p>
-                                        <ul>
-                                            <li>Visitas guiadas y degustaciones en destilería y aceitera (o similares)
-                                            </li>
-                                            <li>Almuerzo con menú de pasos maridado en bodega Trivento, Monte Quieto o
-                                                similar</li>
-                                            <li>Vehículo de alta gama con chofer profesional</li>
-                                            <li>Salidas de lunes a sábado</li>
-                                        </ul>
-                                        <a id="whatsappBtn1WT"
-                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Wine%20Tours"
-                                            class="btn btn-success w-100 mt-2" target="_blank">
-                                            Contratar experiencia por WhatsApp!
-                                        </a>
-                                    </div>
+                              <img src="../recursos/winetoursDegustando.jpg" class="card-img-top object-fit-cover"
+                                   alt="Imagen Degustando Mendoza" style="height: 200px; object-fit: cover;">
+                              <div class="card-body">
+                                <h5 class="card-title custom-title" data-i18n="tour.degustando.title">Degustando Mendoza</h5>
+                                <p class="card-text custom-text" data-i18n="tour.degustando.subtitle">
+                                  Degusta de un gin premiado, aceite de oliva de élite y vinos maridados en un recorrido único por Mendoza.
+                                </p>
+                          
+                                <button id="toggleBtn1WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info1WT" onclick="toggleInfoWT(1)"
+                                        data-i18n="tour.degustando.vermas">
+                                  Ver más
+                                </button>
+                          
+                                <div id="info1WT" class="collapse mt-2">
+                                  <p data-i18n="tour.degustando.description">
+                                    Explora los sabores de Mendoza: degustando el premiado gin de Hilbing Franke, prueba el aceite de oliva extra virgen de Laur, y disfruta de un menú maridado con vinos de excelencia en una prestigiosa bodega.
+                                  </p>
+                          
+                                  <p><strong data-i18n="tour.degustando.includes">Incluye:</strong></p>
+                                  <ul>
+                                    <li data-i18n="tour.degustando.include1">Visitas guiadas y degustaciones en destilería y aceitera (o similares)</li>
+                                    <li data-i18n="tour.degustando.include2">Almuerzo con menú de pasos maridado en bodega Trivento, Monte Quieto o similar</li>
+                                    <li data-i18n="tour.degustando.include3">Vehículo de alta gama con chofer profesional</li>
+                                    <li data-i18n="tour.degustando.include4">Salidas de lunes a sábado</li>
+                                  </ul>
+                          
+                                  <a id="whatsappBtn1WT"
+                                     href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Wine%20Tours"
+                                     class="btn btn-success w-100 mt-2" target="_blank"
+                                     data-i18n="tour.degustando.whatsapp">
+                                    Contratar experiencia por WhatsApp!
+                                  </a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-
+                          </div>
+                          
                         <!-- Tarjeta 2: Vinos de Altura -->
                         <div class="col-12 mb-3">
                             <div class="card mb-3">
-                                <img src="../recursos/winetoursVinos_Mesa%20de%20trabajo%201.jpg"
-                                    class="card-img-top object-fit-cover" alt="Imagen Vinos de Altura"
-                                    style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title custom-title">Vinos de Altura</h5>
-                                    <p class="card-text custom-text">
-                                        Degusta vinos de altura, visita bodegas exclusivas y disfruta un almuerzo
-                                        maridado en un viaje único por Valle de Uco.
-                                    </p>
-
-                                    <button id="toggleBtn2WT" class="btn btn-primary mt-auto custom-btn w-100"
-                                        data-bs-toggle="collapse" data-bs-target="#info2WT" onclick="toggleInfoWT(2)">
-                                        Ver más
-                                    </button>
-
-                                    <div id="info2WT" class="collapse mt-2">
-                                        <p>
-                                            Explora Valle de Uco en un recorrido único: degusta vinos de alta gama
-                                            cultivados a más de 1.000 m.s.n.m., visita bodegas exclusivas y disfruta un
-                                            almuerzo maridado en un entorno mágico.
-                                        </p>
-                                        <p><strong>Incluye:</strong></p>
-                                        <ul>
-                                            <li>Visitas guiadas y degustación en dos bodegas (ej. Andeluna, Familia
-                                                Blanco, etc.)</li>
-                                            <li>Menú de pasos maridado en una tercera bodega (ej. Andeluna o La Azul)
-                                            </li>
-                                            <li>Vehículo de alta gama con chofer profesional</li>
-                                            <li>Salidas de lunes a domingo</li>
-                                        </ul>
-                                        <a id="whatsappBtn2WT"
-                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Vinos%20de%20Altura"
-                                            class="btn btn-success w-100 mt-2" target="_blank">
-                                            Contratar experiencia por WhatsApp!
-                                        </a>
-                                    </div>
+                              <img src="../recursos/winetoursVinos_Mesa de trabajo 1.jpg"
+                                   class="card-img-top object-fit-cover" alt="Imagen Vinos de Altura"
+                                   style="height: 200px; object-fit: cover;">
+                              <div class="card-body">
+                                <h5 class="card-title custom-title" data-i18n="tour.vinosaltura.title">Vinos de Altura</h5>
+                                <p class="card-text custom-text" data-i18n="tour.vinosaltura.subtitle">
+                                  Degusta vinos de altura, visitando bodegas exclusivas y disfrutando de un almuerzo maridado en un viaje único por el Valle de Uco.
+                                </p>
+                          
+                                <button id="toggleBtn2WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info2WT" onclick="toggleInfoWT(2)"
+                                        data-i18n="tour.vinosaltura.vermas">
+                                  Ver más
+                                </button>
+                          
+                                <div id="info2WT" class="collapse mt-2">
+                                  <p data-i18n="tour.vinosaltura.description">
+                                    Explora Valle de Uco en un recorrido único: degustando vinos de alta gama cultivados a más de 1.000 m.s.n.m., visitando bodegas exclusivas y disfrutando de un almuerzo maridado en un entorno mágico.
+                                  </p>
+                          
+                                  <p><strong data-i18n="tour.vinosaltura.includes">Incluye:</strong></p>
+                                  <ul>
+                                    <li data-i18n="tour.vinosaltura.include1">Visitas guiadas y degustación en dos bodegas (ej. Andeluna, Familia Blanco, etc.)</li>
+                                    <li data-i18n="tour.vinosaltura.include2">Menú de pasos maridado en una tercera bodega (ej. Andeluna o La Azul)</li>
+                                    <li data-i18n="tour.vinosaltura.include3">Vehículo de alta gama con chofer profesional</li>
+                                    <li data-i18n="tour.vinosaltura.include4">Salidas de lunes a domingo</li>
+                                  </ul>
+                          
+                                  <a id="whatsappBtn2WT"
+                                     href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Vinos%20de%20Altura"
+                                     class="btn btn-success w-100 mt-2" target="_blank"
+                                     data-i18n="tour.vinosaltura.whatsapp">
+                                    Contratar experiencia por WhatsApp!
+                                  </a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
 
                         <!-- Tarjeta 3: Velas & Wines -->
                         <div class="col-12 mb-3">
                             <div class="card mb-3">
-                                <img src="../recursos/winetoursVelas.jpg" class="card-img-top object-fit-cover"
-                                    alt="Imagen Velas & Wines" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title custom-title">Velas & Wines</h5>
-                                    <p class="card-text custom-text">
-                                        Almuerza en Ojo de Agua con vistas a los Andes y navega a vela en Potrerillos
-                                        degustando vinos de garage.
-                                    </p>
-
-                                    <button id="toggleBtn3WT" class="btn btn-primary mt-auto custom-btn w-100"
-                                        data-bs-toggle="collapse" data-bs-target="#info3WT" onclick="toggleInfoWT(3)">
-                                        Ver más
-                                    </button>
-
-                                    <div id="info3WT" class="collapse mt-2">
-                                        <p>
-                                            Descubre Luján de Cuyo con un almuerzo maridado en la bodega Ojo de Agua y,
-                                            luego, navega a vela en Potrerillos mientras degustas vinos de garage.
-                                        </p>
-                                        <p><strong>Incluye:</strong></p>
-                                        <ul>
-                                            <li>Paseo en embarcación a vela con degustación (opcional: tabla de picada)
-                                            </li>
-                                            <li>Charla técnica</li>
-                                            <li>Vehículo de alta gama con chofer profesional</li>
-                                            <li>Salidas de lunes a viernes</li>
-                                        </ul>
-                                        <a id="whatsappBtn3WT"
-                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Velas%20%26%20Wines"
-                                            class="btn btn-success w-100 mt-2" target="_blank">
-                                            Contratar experiencia por WhatsApp!
-                                        </a>
-                                    </div>
+                              <img src="../recursos/winetoursVelas.jpg" class="card-img-top object-fit-cover"
+                                   alt="Imagen Velas & Wines" style="height: 200px; object-fit: cover;">
+                              <div class="card-body">
+                                <h5 class="card-title custom-title" data-i18n="tour.velaswines.title">Velas & Wines</h5>
+                                <p class="card-text custom-text" data-i18n="tour.velaswines.subtitle">
+                                  Almuerza en bodega Ojo de Agua con una hermosa vista a los Andes y navega a vela en Potrerillos degustando vinos de garage.
+                                </p>
+                          
+                                <button id="toggleBtn3WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info3WT" onclick="toggleInfoWT(3)"
+                                        data-i18n="tour.velaswines.vermas">
+                                  Ver más
+                                </button>
+                          
+                                <div id="info3WT" class="collapse mt-2">
+                                  <p data-i18n="tour.velaswines.description">
+                                    Descubre Luján de Cuyo con un almuerzo maridado en la bodega Ojo de Agua y, luego, navega a vela en Potrerillos mientras degustas vinos de garage.
+                                  </p>
+                          
+                                  <p><strong data-i18n="tour.velaswines.includes">Incluye:</strong></p>
+                                  <ul>
+                                    <li data-i18n="tour.velaswines.include1">Paseo en embarcación a vela con degustación (opcional: tabla de picada)</li>
+                                    <li data-i18n="tour.velaswines.include2">Charla técnica</li>
+                                    <li data-i18n="tour.velaswines.include3">Vehículo de alta gama con chofer profesional</li>
+                                    <li data-i18n="tour.velaswines.include4">Salidas de lunes a viernes</li>
+                                  </ul>
+                          
+                                  <a id="whatsappBtn3WT"
+                                     href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Velas%20%26%20Wines"
+                                     class="btn btn-success w-100 mt-2" target="_blank"
+                                     data-i18n="tour.velaswines.whatsapp">
+                                    Contratar experiencia por WhatsApp!
+                                  </a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
 
                         <!-- Tarjeta 4: Caminos del Malbec D.O.C. -->
                         <div class="col-12 mb-3">
                             <div class="card mb-3">
-                                <img src="../recursos/winetoursDoc.jpg" class="card-img-top object-fit-cover"
-                                    alt="Imagen Caminos del Malbec D.O.C." style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title custom-title">Caminos del Malbec D.O.C.</h5>
-                                    <p class="card-text custom-text">
-                                        Descubre el Malbec D.O.C. en bodegas de Luján y disfruta un menú maridado.
-                                    </p>
-
-                                    <button id="toggleBtn4WT" class="btn btn-primary mt-auto custom-btn w-100"
-                                        data-bs-toggle="collapse" data-bs-target="#info4WT" onclick="toggleInfoWT(4)">
-                                        Ver más
-                                    </button>
-
-                                    <div id="info4WT" class="collapse mt-2">
-                                        <p>
-                                            Explora Luján de Cuyo tras las huellas del Malbec D.O.C. y disfruta una
-                                            experiencia vinícola y gastronómica única.
-                                        </p>
-                                        <p><strong>Incluye:</strong></p>
-                                        <ul>
-                                            <li>Visitas guiadas y degustación en dos bodegas</li>
-                                            <li>Menú de pasos maridado en una tercera bodega</li>
-                                            <li>Vehículo de alta gama con chofer profesional</li>
-                                            <li>Salidas de lunes a sábado</li>
-                                        </ul>
-                                        <a id="whatsappBtn4WT"
-                                            href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Caminos%20del%20Malbec%20D.O.C"
-                                            class="btn btn-success w-100 mt-2" target="_blank">
-                                            Contratar experiencia por WhatsApp!
-                                        </a>
-                                    </div>
+                              <img src="../recursos/winetoursDoc.jpg" class="card-img-top object-fit-cover"
+                                   alt="Imagen Caminos del Malbec D.O.C." style="height: 200px; object-fit: cover;">
+                              <div class="card-body">
+                                <h5 class="card-title custom-title" data-i18n="tour.doc.title">Caminos del Malbec D.O.C.</h5>
+                                <p class="card-text custom-text" data-i18n="tour.doc.subtitle">
+                                  Descubre el Malbec D.O.C. en bodegas de Luján y disfruta un menú maridado.
+                                </p>
+                          
+                                <button id="toggleBtn4WT" class="btn btn-primary mt-auto custom-btn w-100"
+                                        data-bs-toggle="collapse" data-bs-target="#info4WT" onclick="toggleInfoWT(4)"
+                                        data-i18n="tour.doc.vermas">
+                                  Ver más
+                                </button>
+                          
+                                <div id="info4WT" class="collapse mt-2">
+                                  <p data-i18n="tour.doc.description">
+                                    Explora Luján de Cuyo tras las huellas del Malbec D.O.C. y disfruta una experiencia vinícola y gastronómica única.
+                                  </p>
+                          
+                                  <p><strong data-i18n="tour.doc.includes">Incluye:</strong></p>
+                                  <ul>
+                                    <li data-i18n="tour.doc.include1">Visitas guiadas y degustación en dos bodegas</li>
+                                    <li data-i18n="tour.doc.include2">Menú de pasos maridado en una tercera bodega</li>
+                                    <li data-i18n="tour.doc.include3">Vehículo de alta gama con chofer profesional</li>
+                                    <li data-i18n="tour.doc.include4">Salidas de lunes a sábado</li>
+                                  </ul>
+                          
+                                  <a id="whatsappBtn4WT"
+                                     href="https://wa.me/5492615567507?text=Hola,%20quiero%20info%20sobre%20el%20Tour%20Caminos%20del%20Malbec%20D.O.C"
+                                     class="btn btn-success w-100 mt-2" target="_blank"
+                                     data-i18n="tour.doc.whatsapp">
+                                    Contratar experiencia por WhatsApp!
+                                  </a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
 
                     </div>
                 </div>
             </section>
         </div>
+        <h5 class="card-title custom-title textoFiltrito textoFiltrito2">Explora la <a href="https://www.kayak.es/Mendoza.2400.guide" target="_blank">Guía de viaje a Mendoza</a> para obtener más ideas.</h5>
 
 
 
@@ -607,21 +623,21 @@
         </ul>
         <ul class="menu">
             <li class="menu-elem">
-                <a href="../index.html" class="menu-icon"> Inicio </a>
+              <a href="../index.html" class="menu-icon" data-i18n="inicio.title"> Inicio </a>
             </li>
             <li class="menu-elem">
-                <a href="./destinos.html" class="menu-icon"> Destinos </a>
+              <a href="destinos.html" class="menu-icon" data-i18n="experiencias.title"> Destinos </a>
             </li>
             <li class="menu-elem">
-                <a href="./about.html" class="menu-icon"> Sobre nosotros </a>
+              <a href="about.html" class="menu-icon" data-i18n="about.title"> Sobre nosotros </a>
             </li>
             <li class="menu-elem">
-                <a href="./contacto.html" class="menu-icon"> Contacto </a>
+              <a href="contacto.html" class="menu-icon" data-i18n="contacto.title"> Contacto </a>
             </li>
             <li class="menu-elem">
-                <a href="./legal.html" class="menu-icon"> Legal </a>
+              <a href="legal.html" class="menu-icon" data-i18n="legal.title"> Legal </a>
             </li>
-        </ul>
+          </ul>
         <p class="text">EVT legajo 16169 - Disposición 192/2015</p>
         <p class="text">2025 | Todos los derechos reservados</p>
     </footer>
@@ -633,10 +649,23 @@
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
     <script src="../js/filtro.js"></script>
+    <script src="../js/lang.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!-- Language Switcher -->
+<div id="language-switcher" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: white; padding: 5px; border-radius: 10px;">
+    <button type="button" onclick="location.reload()" title="Español" style="margin:5px;">
+      <img src="https://flagcdn.com/w40/es.png" alt="ES" width="25"> ES
+    </button>
+    <button type="button" onclick="setLanguage('en')" title="English" style="margin:5px;">
+      <img src="https://flagcdn.com/w40/us.png" alt="EN" width="25"> EN
+    </button>
+    <button type="button" onclick="setLanguage('pt')" title="Português" style="margin:5px;">
+      <img src="https://flagcdn.com/w40/br.png" alt="PT" width="25"> PT
+    </button>
+  </div>
 </body>
 
 </html>
