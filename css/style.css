@@ -236,6 +236,18 @@ body {padding-right: 0px !important;}
     transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
 }
 
+.whatsapp-icon ion-icon {
+  font-size: 80px; /* Tamaño similar al del ícono de WhatsApp */
+  color: rgb(28, 76, 124); /* Puedes cambiar el color al que prefieras */
+  transition: transform 0.2s ease-in-out;
+  display: block;
+  margin-top: 0 auto 60px;
+  cursor: pointer;
+}
+
+.whatsapp-icon ion-icon:hover {
+  transform: scale(1.1);
+}
   .card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
@@ -260,6 +272,23 @@ body {padding-right: 0px !important;}
       font-size: 3rem; /* Aumenta tamaño en pantallas más grandes */
     }
   }
+
+  .kayak-icon {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .kayak-icon img {
+    display: inline-block;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .kayak-icon img:hover {
+    transform: scale(1.1);
+  }
   
   .footer {
     position: relative;
@@ -277,9 +306,9 @@ body {padding-right: 0px !important;}
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 10px 5px;
-    flex-wrap: wrap;
+    gap: 20px; /* reemplaza el margin manual entre íconos */
+    margin: 10px 0; /* margen vertical solamente */
+    padding: 0;
   }
   
   .icon-elem {
