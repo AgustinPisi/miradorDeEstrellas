@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
     copyButton.addEventListener("click", function(event) {
         event.preventDefault(); // Evita que el enlace haga scroll arriba
 
-        const email = "info@miradordeestrellas.com.ar"; // Cambia esto por tu correo real
+        const email = "info@miradordeestrellas.com.ar"; 
         const textArea = document.createElement("textarea");
         textArea.value = email;
 
-        // Ocultar el textarea fuera de la pantalla
+       
         textArea.style.position = "absolute";
         textArea.style.left = "-9999px";
 
@@ -82,7 +82,7 @@ window.onload = function () {
                     icon: "success",
                     timer: 2000,
                     showConfirmButton: false,
-                    color: "#1c4c7c" // Azul (Bootstrap primary)
+                    color: "#1c4c7c" 
                 });
             }, (error) => {
                 console.log('FAILED...', error);
@@ -101,14 +101,32 @@ function toggleInfo(id) {
     let info = document.getElementById("info" + id);
     let btn = document.getElementById("toggleBtn" + id);
     let whatsappBtn = document.getElementById("whatsappBtn" + id);
+    var lang = localStorage.getItem("lang")
 
     info.addEventListener("hidden.bs.collapse", function () {
+        if (lang == 'en'){
+            btn.textContent = "See more";
+        }
+        else if (lang == 'pt'){
+            btn.textContent = "Veja mais";
+        }
+        else{
+            btn.textContent = "Ver más";
+        }
         btn.textContent = "Ver más";
         whatsappBtn.style.display = "none";
     });
 
     info.addEventListener("shown.bs.collapse", function () {
-        btn.textContent = "Ver menos";
+        if (lang == 'en'){
+            btn.textContent = "See less";
+        }
+        else if (lang == 'pt'){
+            btn.textContent = "Veja menos";
+        }
+        else{
+            btn.textContent = "Ver menos";
+        }
         whatsappBtn.style.display = "block";
     });
 }
@@ -117,14 +135,31 @@ function toggleInfoWT(id) {
     let info = document.getElementById("info" + id + "WT");
     let btn = document.getElementById("toggleBtn" + id + "WT");
     let whatsappBtn = document.getElementById("whatsappBtn" + id + "WT");
+    var lang = localStorage.getItem("lang")
 
     info.addEventListener("hidden.bs.collapse", function () {
-        btn.textContent = "Ver más";
+        if (lang == 'en'){
+            btn.textContent = "See more";
+        }
+        else if (lang == 'pt'){
+            btn.textContent = "Veja mais";
+        }
+        else{
+            btn.textContent = "Ver más";
+        }
         whatsappBtn.style.display = "none";
     });
 
     info.addEventListener("shown.bs.collapse", function () {
-        btn.textContent = "Ver menos";
+        if (lang == 'en'){
+            btn.textContent = "See less";
+        }
+        else if (lang == 'pt'){
+            btn.textContent = "Veja menos";
+        }
+        else{
+            btn.textContent = "Ver menos";
+        }
         whatsappBtn.style.display = "block";
     });
 }

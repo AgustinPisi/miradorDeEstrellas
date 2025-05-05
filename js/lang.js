@@ -53,7 +53,7 @@ const translations = {
       "excursion.altamontania.whatsapp": "Hire experience via WhatsApp!",
       "excursion.tourbodegas.title": "Winery Tour",
       "excursion.tourbodegas.subtitle": "Half-day tour visiting two wineries and an olive oil factory.",
-      "excursion.tourbodegas.vermas": "see more",
+      "excursion.tourbodegas.vermas": "See more",
       "excursion.tourbodegas.description": "Half-day wine tour. You'll visit two wineries with tastings included, seeking to contrast them. Afterward, you'll visit an olive oil factory, where you can sample their products.",
       "excursion.tourbodegas.includes": "Includes:",
       "excursion.tourbodegas.include1": "Tickets and tastings",
@@ -84,7 +84,7 @@ const translations = {
       "excursion.atuel.whatsapp": "Hire experience via WhatsApp",
       "excursion.citytour.title": "City Tour",
       "excursion.citytour.subtitle": "Tour of Mendoza's historic center and main attractions.",
-      "excursion.citytour.vermas": "see more",
+      "excursion.citytour.vermas": "See more",
       "excursion.citytour.description": "Explore Mendoza, visiting its historic center, main squares, Foundation Area, \"La Alameda\" Promenade, Government House, General San Martín Park, and the Cerro de la Gloria viewpoint.",
       "excursion.citytour.includes": "Includes:",
       "excursion.citytour.include1": "Bilingual guide",
@@ -98,7 +98,7 @@ const translations = {
       "excursion.citytour.whatsapp": "Hire experience via WhatsApp",
       "excursion.villavicencio.title": "Villavicencio Reserve",
       "excursion.villavicencio.subtitle": "Half-day excursion to explore and photograph the Andean foothills and the Villavicencio Nature Reserve, guided by local reserve guides.",
-      "excursion.villavicencio.vermas": "see more",
+      "excursion.villavicencio.vermas": "See more",
       "excursion.villavicencio.description": "Half-day tour of the Villavicencio Nature Reserve, where you can take photos of the gorge from above and explore the historic center of the Villavicencio Hotel and its gardens with expert guides.",
       "excursion.villavicencio.includes": "Includes:",
       "excursion.villavicencio.include1": "Bilingual guide",
@@ -112,7 +112,7 @@ const translations = {
       "excursion.villavicencio.whatsapp": "Hire experience via WhatsApp",
       "excursion.valleuco.title": "Uco Valley and Cordón del Plata",
       "excursion.valleuco.subtitle": "Tour of the Uco Valley with panoramic stops and a visit to wineries.",
-      "excursion.valleuco.vermas": "see more",
+      "excursion.valleuco.vermas": "See more",
       "excursion.valleuco.description": "Enjoy a day in the Uco Valley: visit the Cristo Rey panoramic point, the Manzano Histórico, the productive corridor, and take a tour of a local winery (tasting not included). We'll stop at a local restaurant for lunch (not included).",
       "excursion.valleuco.includes": "Includes:",
       "excursion.valleuco.include1": "Bilingual guide",
@@ -127,7 +127,7 @@ const translations = {
       "excursion.valleuco.whatsapp": "Hire experience via WhatsApp",
       "tour.degustando.title": "Tasting Mendoza",
       "tour.degustando.subtitle": "Taste award-winning gin, premium olive oil, and paired wines on a unique tour of Mendoza.",
-      "tour.degustando.vermas": "see more",
+      "tour.degustando.vermas": "See more",
       "tour.degustando.description": "Explore the flavors of Mendoza by tasting Hilbing Franke's award-winning gin, trying Laur's extra virgin olive oil, and enjoying a menu paired with excellent wines at a prestigious winery.",
       "tour.degustando.includes": "Includes:",
       "tour.degustando.include1": "Guided tours and tastings at the distillery and olive oil mill (or similar)",
@@ -137,7 +137,7 @@ const translations = {
       "tour.degustando.whatsapp": "Hire experience via WhatsApp",  
       "tour.vinosaltura.title": "High Altitude Wines",
       "tour.vinosaltura.subtitle": "Taste high altitude wines, visit exclusive wineries, and enjoy a paired lunch on a unique trip through the Uco Valley.",
-      "tour.vinosaltura.vermas": "see more",
+      "tour.vinosaltura.vermas": "See more",
       "tour.vinosaltura.description": "Explore the Uco Valley on a unique tour: tasting premium wines grown at over 1,000 meters above sea level, visiting exclusive wineries, and enjoying a paired lunch in a magical setting.",
       "tour.vinosaltura.includes": "Includes:",
       "tour.vinosaltura.include1": "Guided tours and tastings at two wineries (e.g. Andeluna, Familia Blanco, etc.)",
@@ -147,7 +147,7 @@ const translations = {
       "tour.vinosaltura.whatsapp": "Hire experience via WhatsApp",
       "tour.velaswines.title": "Velas & Wines",
       "tour.velaswines.subtitle": "Have lunch at Ojo de Agua winery with a beautiful view of the Andes and sail in Potrerillos tasting garage wines.",
-      "tour.velaswines.vermas": "see more",
+      "tour.velaswines.vermas": "See more",
       "tour.velaswines.description": "Discover Luján de Cuyo with a paired lunch at Ojo de Agua winery, then sail in Potrerillos while tasting garage wines.",
       "tour.velaswines.includes": "Includes:",
       "tour.velaswines.include1": "Sailing trip with tasting (optional: snack board)",
@@ -157,7 +157,7 @@ const translations = {
       "tour.velaswines.whatsapp": "Hire experience via WhatsApp",
       "tour.doc.title": "Malbec D.O.C. Paths",
       "tour.doc.subtitle": "Discover Malbec D.O.C. at wineries in Luján and enjoy a paired menu.",
-      "tour.doc.vermas": "see more",
+      "tour.doc.vermas": "See more",
       "tour.doc.description": "Explore Luján de Cuyo following the trail of Malbec D.O.C. and enjoy a unique wine and food experience.",
       "tour.doc.includes": "Includes:",
       "tour.doc.include1": "Guided tours and tastings at two wineries",
@@ -337,18 +337,32 @@ const translations = {
      
     }
   };
+
+  function setSpanish(){
+    localStorage.setItem("lang", "es")
+    location.reload();
+  }
   
   function setLanguage(lang) {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const translation = translations[lang][key];
-      if (translation) {
-        el.innerText = translation;
-      }
-    });
+    localStorage.setItem("lang", lang)
+    if (lang != "es") {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translation = translations[lang][key];
+        if (translation) {
+          el.innerText = translation;
+        }
+      });
+    }
   }
   
   document.addEventListener('DOMContentLoaded', () => {
-    setLanguage('es'); // 🔥 SIEMPRE arranca en Español
+    lang = localStorage.getItem("lang");
+    if (lang == "pt" || lang == "en" ){
+      setLanguage(lang)
+    }
+    else{
+      setLanguage("es")
+    }
   });
   
